@@ -46,13 +46,13 @@ The email check can be done couple of steps:
 
 ```shell
 curl --location --request POST 'https://breachreport.com/portal/api/v1/email/check' \
---header 'authorization: 916f1847-6a59-4e1b-67fb-71c12265cade' \
+--header 'API-Key: 916f1847-6a59-4e1b-67fb-71c12265cade' \
 --form 'email=goodfig1@yahoo.com'
 ```
 **Request parameters:**
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| authorization | string | An API Key retrieved from [Portal](https://breachreport.com/portal/user-api). Should be included as `Header`. |
+| API-Key | string | An API Key retrieved from [Portal](https://breachreport.com/portal/user-api). Should be included as `Header`. |
 | email | string | Email you want to check. |
 
 #### Verified email response parameters:
@@ -300,7 +300,7 @@ func main() {
 | Code | Name | Description |
 | ------ | ------ | ------ |
 | 400 | Bad Request | Invalid domain URL. Please check the Base URL. |
-| 401 | Unauthorized | Missing `Authorization` token. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
+| 401 | Unauthorized | Missing `API-Key` header. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
 | 402 | Payment required | You need to upgrade subscription. You can visit [Subscription](https://breachreport.com/portal/subscriptions) page. |
 | 409 | Conflict | A domain name or email already is already registered. Check your account for existing domains/emails. |
 | 500 | Internal server error | Internal server error occured. If this continues, please, contact our Support. |
