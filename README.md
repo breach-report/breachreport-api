@@ -299,6 +299,7 @@ func main() {
 # Status codes
 | Code | Name | Description |
 | ------ | ------ | ------ |
+| 200 | OK | Request successfully passed. |
 | 400 | Bad Request | Invalid domain URL. Please check the Base URL. |
 | 401 | Unauthorized | Missing `API-Key` header. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
 | 402 | Payment required | You need to upgrade subscription. You can visit [Subscription](https://breachreport.com/portal/subscriptions) page. |
