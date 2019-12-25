@@ -393,7 +393,7 @@ puts response.read_body
 </p>
 </details>
 
-<details><summary><b>Ruby - Swift - URLSession</b></summary>
+<details><summary><b>Swift - URLSession</b></summary>
 <p>
 
 ```swift
