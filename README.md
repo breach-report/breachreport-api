@@ -20,15 +20,15 @@
     </a>
     <span> | </span>
     <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#email-check">
-      Email check
+      Email Check
     </a>
     <span> | </span>
     <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
-      Hashed email check
+      Hashed Email Check
     </a>
     <span> | </span>
     <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#hashed-email-check">
-      Status codes
+      Status Codes
     </a>
     <span> | <span>
     </h4>
