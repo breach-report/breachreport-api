@@ -1,5 +1,5 @@
-<a href="https://breachreport.com/">
-    <img src="https://breachreport.com"><img src="https://github.com/breach-report/breachreport-api/blob/master/images/Rectangle%20560%20(1).png" alt="BreachReport logo" title="Breach Report" align="right" height="60" />
+<a>
+    <img src="https://breachreport.com"><img src="https://github.com/breach-report/breachreport-api/blob/master/images/Rectangle%20560%20(1).png" alt="BreachReport logo" title="Breach Report" align="left" height="60" />
 </a>
 
 API Documentation
