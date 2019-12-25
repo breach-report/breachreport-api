@@ -6,7 +6,7 @@
   Breach Report API Documentation
 </h1>
 
-![Breachreport](images/78667887_2764371116948885_6150780200259944448_o.jpg)
+  <a name="logo" href="http://breachreport.com">![Breachreport](images/78667887_2764371116948885_6150780200259944448_o.jpg)</a>
 
 <div align="center"><a name="menu"></a>
   <h4>
