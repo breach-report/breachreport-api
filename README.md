@@ -343,30 +343,6 @@ print(response.text.encode('utf8'))
 </p>
 </details>
 
-<details><summary><b>Python - Requests</b></summary>
-<p>
-
-```python
-import requests
-
-url = "https://breachreport.com/portal/api/v1/email/check"
-
-payload = {'email': 'test@test.com'}
-files = [
-
-]
-headers = {
-  'api-key': '916f1847-6a59-4e1b-87fb-71c12231aacd',
-  'Content-Type': 'application/x-www-form-urlencoded'
-}
-
-response = requests.request("POST", url, headers=headers, data = payload, files = files)
-
-print(response.text.encode('utf8'))
-```
-
-</p>
-</details>
 
 <details><summary><b>Ruby - Net:::HTTP</b></summary>
 <p>
