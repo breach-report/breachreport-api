@@ -1,14 +1,12 @@
 ![Top-image](pics/78667887_2764371116948885_6150780200259944448_o.jpg)
 
 ### Contents:
-* [Introduction]()
-* [API-Key]()
-* [Email check]()
-	* [Request  example]()
-	* [Response example]()
-* [Hashed email check]()
-	* [Request example]()
-	* [Response example]()
+* [Introduction](https://github.com/breach-report/breachreport-api/blob/master/README.md#introduction)
+* [API-Key](https://github.com/breach-report/breachreport-api/blob/master/README.md#api-key)
+* [Email check](https://github.com/breach-report/breachreport-api/blob/master/README.md#email-check)
+	* [Request and response examples](https://github.com/breach-report/breachreport-api/blob/master/README.md#request-and-response-examples)
+* [Hashed email check](https://github.com/breach-report/breachreport-api/blob/master/README.md#hashed-email-check)
+	* [Request and response examples]()
 * [Status codes]()
 
 
