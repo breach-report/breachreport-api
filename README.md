@@ -823,38 +823,6 @@ echo $response;
 </p>
 </details>
 
-<details><summary><b>PHP - cURL</b></summary>
-<p>
-
-```php
-<?php
-
-$curl = curl_init();
-
-curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://breachreport.com/api/v1/email-hash/check",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => array('hash' => 'fbd845faf6845d53d1124e63b17844fd671eab996e5397bc6e1962ce3ca034t6'),
-  CURLOPT_HTTPHEADER => array(
-    "authorization: 916f1847-6a59-4e1b-87fb-71c12231aacd",
-    "Content-Type: application/x-www-form-urlencoded"
-  ),
-));
-
-$response = curl_exec($curl);
-
-curl_close($curl);
-echo $response;
-```
-
-</p>
-</details>
 
 <details><summary><b>Python - http.client</b></summary>
 <p>
@@ -939,7 +907,7 @@ puts response.read_body
 </p>
 </details>
 
-<details><summary><b>Swift - URLsession</b></summary>
+<details><summary><b>Swift - URLSession</b></summary>
 <p>
 
 ```swift
