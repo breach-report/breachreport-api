@@ -99,7 +99,7 @@ curl --location --request POST 'https://breachreport.com/portal/api/v1/email/che
 | api-key | string | An API Key retrieved from [Portal](https://breachreport.com/portal/user-api). Should be included as `Header`. |
 | email | string | Email you want to check. |
 
-#### Check requests in other languages
+### Different request examples
 <details><summary><b>C - lubcurl</b></summary>
 <p>
 
@@ -575,7 +575,7 @@ curl --location --request POST 'https://breachreport.com/api/v1/email-hash/check
 --form 'hash=fbd845faf6845d53d1124e63b17844fd671eab996e5397bc6e1962ce3ca034t6'
 ```
 
-#### Check requests in other languages
+### Different request examples
 <details><summary><b>C - libcurl</b></summary>
 <p>
 
