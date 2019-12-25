@@ -6,8 +6,8 @@
 * [Email check](https://github.com/breach-report/breachreport-api/blob/master/README.md#email-check)
 	* [Request and response examples](https://github.com/breach-report/breachreport-api/blob/master/README.md#request-and-response-examples)
 * [Hashed email check](https://github.com/breach-report/breachreport-api/blob/master/README.md#hashed-email-check)
-	* [Request and response examples]()
-* [Status codes]()
+	* [Request and response examples](https://github.com/breach-report/breachreport-api/blob/master/README.md#request-and-response-examples-1)
+* [Status codes](https://github.com/breach-report/breachreport-api/blob/master/README.md#status-codes)
 
 
 # Introduction
@@ -1054,7 +1054,7 @@ semaphore.wait()
 
 ### Unverified email reposnse:
 
-```json
+```
 {
 	“emailHash":"8b063d4d3f323127ad8c13d42207269a747da2421db686144c5c982cc491e1da",
 	"records":27,
