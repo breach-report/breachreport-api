@@ -23,7 +23,7 @@
       Email Check
     </a>
     <span> | </span>
-    <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
+    <a href="https://github.com/breach-report/breachreport-api#hashed-email-check">
       Hashed Email Check
     </a>
     <span> | </span>
