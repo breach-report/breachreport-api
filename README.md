@@ -1,9 +1,9 @@
-<a>
-    <img src="https://breachreport.com"><img src="https://github.com/breach-report/breachreport-api/blob/master/images/Rectangle%20560%20(1).png" alt="BreachReport logo" title="Breach Report" align="left" height="60" />
-</a>
 
-API Documentation
+
+Breach Report API Documentation
 ======================
+![Breachreport](images/78667887_2764371116948885_6150780200259944448_o.jpg)
+
 <div align="center"><a name="menu"></a>
   <h4>
   <span> | </span>
