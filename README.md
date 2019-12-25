@@ -1,33 +1,10 @@
 
 
-Breach Report API Documentation
-======================
-
-<div align="center"><a name="menu"></a>
-  <h4>
-  <span> | </span>
-  <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#introduction">
-      Introduction
-    </a>
-	<span> | </span>
-    <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#api-key">
-      API-Key
-    </a>
-    <span> | </span>
-    <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#email-check">
-      Email check
-    </a>
-    <span> | </span>
-    <a href="https://github.com/CCOSTAN/Home-AssistantConfig/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">
-      Hashed email check
-    </a>
-    <span> | </span>
-    <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#hashed-email-check">
-      Status codes
-    </a>
-    <span> | <span>
-    </h4>
-</div>
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Breach Report API Documentation
+</h1>
 
 ![Breachreport](images/78667887_2764371116948885_6150780200259944448_o.jpg)
 
