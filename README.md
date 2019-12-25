@@ -27,7 +27,7 @@
       Hashed Email Check
     </a>
     <span> | </span>
-    <a href="https://github.com/breach-report/breachreport-api/blob/master/README.md#hashed-email-check">
+    <a href="https://github.com/breach-report/breachreport-api#status-codes">
       Status Codes
     </a>
     <span> | <span>
