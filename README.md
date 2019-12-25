@@ -1,4 +1,4 @@
-![Top-image](pics/78667887_2764371116948885_6150780200259944448_o.jpg)
+![Top-image](images/78667887_2764371116948885_6150780200259944448_o.jpg)
 
 ### Contents:
 * [Introduction](https://github.com/breach-report/breachreport-api/blob/master/README.md#introduction)
