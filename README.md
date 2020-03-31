@@ -7,7 +7,7 @@
 
 <p align="center">
   <br>
-  <img width="200" src="../img/breachreport-200px.png" alt="">
+  <img width="200" src="./img/breachreport-200px.png" alt="">
   <br>
   <br>
 </p>
@@ -40,21 +40,20 @@
 
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Youe%20app%20will%20be%20secure%20with%20Breach%20Report%20API.&url=https://breachreport.com/&via=BreachReports&hashtags=cybersecurity,CyberSecurity,infosec,api)]
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/arrayio/array-io-keychain/blob/master/LICENSE.md)]
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/arrayio/array-io-keychain/blob/master/LICENSE.md)] -->
 
-# Overview
+## Overview
 
 The Breach Report API team monitors the internet for information about data breaches. Currently, our database contains information about over 12B compromised user accounts. Your applications can access this information via Breach Report API.
 
 <p align="center">
   <br>
-  <img width="500" src="./img/superapi.png" alt="">
+  <img width="500" src="../img/superapi.png" alt="">
   <br>
 </p>
-
 
 ## Getting started
 
@@ -64,21 +63,21 @@ When you use Breach Report API, include the API key to each request header.
 
 <p align="center">
   <br>
-  <img width="500" src="img/chapter-separate.jpg" alt="">
+  <img width="500" src="../img/chapter-separate.jpg" alt="">
 </p>
 
 ## Testing Breach Report API
 
 Breach Report API can be tested using various automation tools.
 
-Contact the support team for
+Contact the technical support for the additional API aids (request schemas, etc).
 
 The following parameters can be specified via the test environment.
 
 | PARAMETER | VALUE | COMMENTS |
 | ------ | ------ | ------ |
 | BASE_URL | `https://breachreport.com` |  |
-| API_KEY | `your-secret-key` | See [Getting the API key](../before-using-api.md#getting-the-api-key) for details. |
+| API_KEY | `your-secret-key` | See [Getting the API key](./docs/before-using-api.md#getting-the-api-key) for details. |
 
 <p align="center">
   <br>
@@ -87,10 +86,12 @@ The following parameters can be specified via the test environment.
 
 ## How to Use Breach Report API
 
+For detailed information on how to use the API, see the following pages:
+
 * [Before Using Breach Report API](docs/01-before-using-api.md)
-* [Check Email Addresses and Domains]()
-* [Register Email Addresses and Domains]()
-* [Monitor Email Addresses and Domains]()
+* [Checking Email Addresses and Domains](docs/02-check-email-domains.md)
+* [Registering Email Addresses and Domains](docs/03-manage-emails-domains.md)
+* [Monitoring Email Addresses and Domains](docs/04-monitor.md)
 
 <p align="center">
   <br>
@@ -99,7 +100,7 @@ The following parameters can be specified via the test environment.
 
 ## Contact
 
-If you need help integrating with Breach Report API or need additional information, don't hesitate to contact us on:
+If you need help integrating with Breach Report API or need additional information, feel free to contact us on:
 
 * Telegram
 * Stackoverflow
@@ -133,7 +134,7 @@ You can contribute to the project by creating a Breach Report account and gettin
 
 Breach Report provides several Business and Enterprise subscription plans.
 
-For information about the current subscription opportunities, see [Billing and Payments] on the Breach Report portal.
+For information about the current subscription opportunities, see [Billing and Payments](https://breachreport.com/portal/subscriptions) on the Breach Report portal.
 
 The subscription plans may have limitations for the number of domains to track and available API calls. To remove the current limitations, you may upgrade your current BR account.
 
