@@ -42,9 +42,8 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Youe%20app%20will%20be%20secure%20with%20Breach%20Report%20API.&url=https://breachreport.com/&via=BreachReports&hashtags=cybersecurity,CyberSecurity,infosec,api)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/arrayio/array-io-keychain/blob/master/LICENSE.md)
-[![npm version](https://badge.fury.io/js/keychain.js.svg)](https://badge.fury.io/js/keychain.js)]
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Youe%20app%20will%20be%20secure%20with%20Breach%20Report%20API.&url=https://breachreport.com/&via=BreachReports&hashtags=cybersecurity,CyberSecurity,infosec,api)]
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/arrayio/array-io-keychain/blob/master/LICENSE.md)]
 
 # Overview
 
@@ -63,13 +62,16 @@ Before using Breach Report API, make sure you've registered at [Breach Report AP
 
 When you use Breach Report API, include the API key to each request header.
 
+<p align="center">
+  <br>
+  <img width="500" src="img/chapter-separate.jpg" alt="">
+</p>
+
 ## Testing Breach Report API
 
 Breach Report API can be tested using various automation tools.
 
-Breach Report API request schema for Postman is available upon request.
-
-https://www.getpostman.com/collections/123456
+Contact the support team for
 
 The following parameters can be specified via the test environment.
 
@@ -78,14 +80,22 @@ The following parameters can be specified via the test environment.
 | BASE_URL | `https://breachreport.com` |  |
 | API_KEY | `your-secret-key` | See [Getting the API key](../before-using-api.md#getting-the-api-key) for details. |
 
+<p align="center">
+  <br>
+  <img width="500" src="img/chapter-separate.jpg" alt="">
+</p>
+
 ## How to Use Breach Report API
 
-* [Before Using Breach Report API]()
+* [Before Using Breach Report API](docs/01-before-using-api.md)
 * [Check Email Addresses and Domains]()
 * [Register Email Addresses and Domains]()
 * [Monitor Email Addresses and Domains]()
-* [Configure the Postback URL and Be Updated]()
 
+<p align="center">
+  <br>
+  <img width="500" src="img/chapter-separate.jpg" alt="">
+</p>
 
 ## Contact
 
@@ -101,22 +111,38 @@ We take security issues very seriously and we'll be looking forward to hearing f
 
 And, we hope you enjoy using Breach Report API and the integration goes smooth!
 
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+
 ## Contributing to the Project
 
 The main purpose of this repository is to let people know about Breach Report API, making it more functional, faster and easier to use.
 
 You can contribute to the project by creating a Breach Report account and getting a paid subscription or by reporting technical issues to the technical support at info@breachreport.com.
 
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+
 ## Subscription Plans
 
 Breach Report provides several Business and Enterprise subscription plans.
 
-For information about the current subscription opportunities, see the Billing and Payments page on the Breach Report portal.
+For information about the current subscription opportunities, see [Billing and Payments] on the Breach Report portal.
 
 The subscription plans may have limitations for the number of domains to track and available API calls. To remove the current limitations, you may upgrade your current BR account.
 
 For further information, contact the product support at info@breachreport.com.
 
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 
 ## License
