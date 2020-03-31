@@ -8,10 +8,11 @@ Things you must know before using Breach Report API:
 
 ## In this Chapter
 
-* [Registering at Breach Report]()
-* [Getting the API key]()
-* [Adding an email address]()
-* [Verifying an email address]()
+* [Registering at Breach Report](#registering-at-breach-report-portal)
+* [Getting the API key](#getting-the-api-key)
+* [Adding an email address](#adding-an-email-address)
+* [Verifying an email address](#verifying-a-registered-email-address)
+* [HTTP response codes](#http-response-codes)
 
 
 ## Registering at Breach Report Portal
@@ -27,7 +28,7 @@ To register a Breach Report account:
 
 <p align="center">
   <br>
-  <img width="500" src="../img/chapter-separate.jpg" alt="">
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
 
@@ -51,7 +52,7 @@ The page now displays the API key you've generated.
 
 Registering at Breach Report portal automatically adds the registration email address to your account.
 
-You can add more email addresses to your account via the portal or bu using
+You can add more email addresses to your account via the portal or by using the API.
 
 To add an email address via the portal:
 
@@ -69,9 +70,8 @@ Alternatively, the address can be registered via the API.
 
 <p align="center">
   <br>
-  <img width="500" src="../img/chapter-separate.jpg" alt="">
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
-
 
 ## Verifying a Registered Email Address
 
@@ -85,3 +85,20 @@ When adding an email address via the portal, a message appears in the bottom por
 </p>
 
 To verify an email address, open the confirmation request message and verify it by clicking the confirmation link.
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+## HTTP Response Codes
+
+With Breach Report API, you may get the following HTTP response codes.
+
+| Code | Name | Description |
+| ------ | ------ | ------ |
+| 200 | OK | Request successfully fulfilled. Everything worked as expected. |
+| 400 | Bad Request | Invalid domain URL. Please check the Base URcannot be found in the header. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
+| 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription](https://breachreport.com/portal/subscriptions) page. |
+| 409 | Conflict | The domain name or the email address was registered before. Check your account for existing domains / emails. |
+| 500 | Internal server error | Internal server error occured. If this issue persists, contact our Support Service. |
