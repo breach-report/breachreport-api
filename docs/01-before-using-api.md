@@ -1,10 +1,55 @@
-# Before Using Breach Report API
+
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Before Using Breach Report API
+</h1>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+<div align="center"><a name="menu"></a>
+  <h4>
+    <span> | </span>
+    <a href="../README.md">
+      General Info
+    </a>
+    <span> | </span>
+    <a href="./docs/02-check-email-domains.md">
+      Check Emails / Domains
+    </a>
+    <span> | </span>
+    <a href="./docs/03-manage-emails-domains.md">
+      Manage Account
+    </a>
+    <span> | </span>
+    <a href="04-monitor.md">
+      Monitor
+    </a>
+    <span> | </span>
+    <a href="./docs/05-get-postback-url.md">
+      Notifications
+    </a>
+    <span> | <span>
+  </h4>
+</div>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 Things you must know before using Breach Report API:
 
 * Your application must authenticate all calls to Breach Report API using a unique API key. To get the API key, you'll need to register at Breach Report portal.
 * For greater security, Breach Report API provide full email incident data to the account holders only. To prove the account ownership, you must verify the email address by email.
 
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 ## In this Chapter
 
@@ -14,6 +59,10 @@ Things you must know before using Breach Report API:
 * [Verifying an email address](#verifying-a-registered-email-address)
 * [HTTP response codes](#http-response-codes)
 
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 ## Registering at Breach Report Portal
 
@@ -79,7 +128,7 @@ Adding an email address to the account (via the portal or by email) automaticall
 
 When adding an email address via the portal, a message appears in the bottom portion of the page.
 
-<p align="center">
+<p align="left">
   <img width="500" src="../img/verify-email-01.png" alt="">
   <br>
 </p>

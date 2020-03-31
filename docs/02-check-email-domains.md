@@ -1,9 +1,46 @@
+
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Checking Domains and Email Addresses
+</h1>
+
 <p align="center">
   <br>
-  <img width="500" src="../img/chapter-separate.jpg" alt="">
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-# Checking Domains and Email Addresses</span>
+<div align="center"><a name="menu"></a>
+  <h4>
+    <span> | </span>
+    <a href="../README.md">
+      General Info
+    </a>
+    <span> | </span>
+    <a href="./docs/01-before-using-api.md">
+      Prepare
+    </a>
+    <span> | </span>
+    <a href="./docs/03-manage-emails-domains.md">
+      Manage Account
+    </a>
+    <span> | </span>
+    <a href="04-monitor.md">
+      Monitor
+    </a>
+    <span> | </span>
+    <a href="./docs/05-get-postback-url.md">
+      Notifications
+    </a>
+    <span> | <span>
+  </h4>
+</div>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
 
 Breach Report API enables the user to check email addresses for data breach incidents by providing the following calls:
 
@@ -14,7 +51,7 @@ Breach Report API enables the user to check email addresses for data breach inci
 
 <p align="center">
   <br>
-  <img width="500" src="../img/chapter-separate.jpg" alt="">
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
 # Check a Plaintext Email Address
@@ -23,7 +60,7 @@ Breach Report API enables the user to check email addresses for data breach inci
 
 **Request method:** `POST`
 
-This API call accepts a plaintext email address and checks it for known data breaches. 
+This API call accepts a plaintext email address and checks it for known data breaches.
 
 Alternatively, you may check an email address by using a [hashed email address](#check-a-hashed-email-address) (recommended method).
 
@@ -32,7 +69,7 @@ This API call returns:
 * Incident count for **unverified** emails.
 * Incident count and **details** for **verified** emails.
 
-Verified email addresses are those that are confirmed by the API users via their email addresses. 
+Verified email addresses are those that are confirmed by the API users via their email addresses.
 
 How to construct the request:
 
@@ -89,7 +126,7 @@ print(response.text.encode('utf8'))
 <br>
 
 ```ruby
-# Sample Ruby code 
+# Sample Ruby code
 require "uri"
 require "net/http"
 url = URI("{{BASE_URL}}/api/enterprise/v1/email/check")
@@ -104,7 +141,7 @@ puts response.read_body
 
 </details>
 
-### Response Examples 
+### Response Examples
 
 <details>
 <summary>Verified email address: found  breaches</summary>
@@ -135,7 +172,7 @@ puts response.read_body
     }
   ]
 }
- 
+
 ```
 
 | Name | Type | Description |
@@ -161,7 +198,7 @@ puts response.read_body
 
 <details>
 <summary>Unverified email address: No breaches</summary>
-<br> 
+<br>
 
 ```json
 {
@@ -195,7 +232,7 @@ puts response.read_body
 
 This API call accepts a SHA256-hash email address value. This is the recommended way to check email addresses using Breach Report API.
 
-Alternatively, the API provides a request accepting [a plaintext email address value](#check-a-plaintext-email-address). 
+Alternatively, the API provides a request accepting [a plaintext email address value](#check-a-plaintext-email-address).
 
 This API call returns:
 
@@ -318,7 +355,7 @@ puts response.read_body
             ]
         }
     ]
-} 
+}
 ```
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -364,13 +401,13 @@ puts response.read_body
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-# Check a Web Domain
+# Check a Domain for Compromised Email Addresses
 
 **Request URL**: `{BASE_URL}/api/enterprise/v1/domain/check`
 
 **Request method:** `POST`
 
-This API call accepts a plaintext web domain value and returns a list of compromised email addresses on this domain. 
+This API call accepts a plaintext web domain value and returns a list of compromised email addresses on this domain.
 
 How to construct the request:
 
@@ -428,7 +465,7 @@ print(response.text.encode('utf8'))
 <br>
 
 ```ruby
-# Sample Ruby code 
+# Sample Ruby code
 require "uri"
 require "net/http"
 url = URI("{{BASE_URL}}/api/enterprise/v1/domain/check")

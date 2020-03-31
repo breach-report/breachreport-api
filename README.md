@@ -31,10 +31,10 @@
       Monitor
     </a>
     <span> | </span>
-    <!-- <a href="./docs/05-get-postback-url.md">
+    <a href="./docs/05-get-postback-url.md">
       Notifications
     </a>
-    <span> | <span> -->
+    <span> | <span>
     </h4>
 </div>
 
@@ -57,7 +57,7 @@ The Breach Report API team monitors the internet for information about data brea
 
 ## Getting started
 
-Before using Breach Report API, make sure you've registered at [Breach Report API portal](https://breachreport.com) so you can use [the unique API key](https://github.com/vissaly/brapi/blob/master/docs/get-api-key.md).
+Before using Breach Report API, make sure you've registered at [Breach Report API portal](https://breachreport.com) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
 
 When you use Breach Report API, include the API key to each request header.
 
@@ -92,6 +92,7 @@ For detailed information on how to use the API, see the following pages:
 * [Checking Email Addresses and Domains](docs/02-check-email-domains.md)
 * [Registering Email Addresses and Domains](docs/03-manage-emails-domains.md)
 * [Monitoring Email Addresses and Domains](docs/04-monitor.md)
+* [Getting Notifications](docs/05-postback-url.md)
 
 <p align="center">
   <br>
@@ -129,7 +130,6 @@ You can contribute to the project by [creating a Breach Report account](./docs/0
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-
 ## Subscription Plans
 
 Breach Report provides several Business and Enterprise subscription plans.
@@ -149,8 +149,3 @@ For further information, contact the product support at info@breachreport.com.
 ## License
 
 This project is licensed under the terms of the MIT license.
-
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>

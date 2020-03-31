@@ -32,7 +32,6 @@
 <br>
 </details>
 
-
 <details>
 <summary>Python code example.</summary>
 <br>
@@ -43,3 +42,32 @@
 <br>
 </details>
 
+<div align="center"><a name="menu"></a>
+  <h4>
+    <span> | </span>
+    <a href="../README.md">
+      General Info
+    </a>
+    <span> | </span>
+    <a href="./docs/01-before-using-api.md">
+      Prepare
+    </a>
+    <span> | </span>
+    <a href="./docs/02-check-email-domains.md">
+      Check Emails / Domains
+    </a>
+    <span> | </span>
+    <a href="./docs/03-manage-emails-domains.md">
+      Manage Account
+    </a>
+    <span> | </span>
+    <a href="04-monitor.md">
+      Monitor
+    </a>
+    <span> | </span>
+    <a href="./docs/05-get-postback-url.md">
+      Notifications
+    </a>
+    <span> | <span>
+  </h4>
+</div>

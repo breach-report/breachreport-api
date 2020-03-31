@@ -1,4 +1,44 @@
-# Monitoring Email Addresses and Web Domains
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Monitoring Email Addresses and Web Domains
+</h1>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+<div align="center"><a name="menu"></a>
+  <h4>
+    <span> | </span>
+    <a href="../README.md">
+      General Info
+    </a>
+    <span> | </span>
+    <a href="./docs/01-before-using-api.md">
+      Prepare
+    </a>
+    <span> | </span>
+    <a href="./docs/02-check-email-domains.md">
+      Check Emails / Domains
+    </a>
+    <span> | </span>
+    <a href="./docs/03-manage-emails-domains.md">
+      Manage Account
+    </a>
+    <span> | </span>
+    <a href="./docs/05-get-postback-url.md">
+      Notifications
+    </a>
+    <span> | <span>
+  </h4>
+</div>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 Breach Report API enables the consumers to put email addresses and web domains on and off the watchlist.
 
@@ -6,12 +46,16 @@ The consumers will be alerted via the [Postback URL](), if the associated addres
 
 This chapter describes the following calls:
 
+* [Start email address monitoring](email-monitoring)
+* [Start domain monitoring](domain-monitoring)
+* [Stop email address monitoring](email-monitoring)
+* [Stop domain monitoring](domain-monitoring)
+* [Assign an email address to a domain](#assign-an-email-address)
 
 <p align="center">
   <br>
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
-
 
 ## Start Email Monitoring
 
