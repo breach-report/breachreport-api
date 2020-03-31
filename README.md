@@ -59,7 +59,7 @@ The Breach Report API team monitors the internet for information about data brea
 
 Before using Breach Report API, make sure you've registered at [Breach Report API portal](https://breachreport.com) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
 
-When you use Breach Report API, include the API key to each request header.
+When you use Breach Report API, include the API key in each API call header.
 
 <p align="center">
   <br>

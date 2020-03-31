@@ -41,7 +41,7 @@
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-Breach Report API provides delivery of breach-related notifications to a user-specified URL address (Postback URL Address).
+Breach Report API provides delivery of breach-related notifications to a user-specified URL address (Postback URL Address). See [Notification Data Example](#notification-data-example) for the format of data the API can provide.
 
 The Postback URL Address must start with `https://` prefix. 
 
@@ -52,6 +52,13 @@ You can manage the Postback URL value using the following operations:
 * [Get current Postback URL Address value](#get-postback-url-address)
 * [Set or update the Postback URL Address](#set-postback-url-address)
 * [Remove the Postback URL Address altogether](#delete-postback-url-address)
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+## Notification Data Format
 
 <details>
 <summary>Show the notification data example.</summary>
@@ -250,7 +257,7 @@ puts response.read_body
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-## Set Postback URL Address
+## Set the Postback URL Address
 
 **Request URL**: `{BASE_URL}/api/enterprise/v1/postback`
 
