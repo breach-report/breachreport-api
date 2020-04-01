@@ -230,7 +230,7 @@ puts response.read_body
 
 **Request method:** `POST`
 
-This API request adds an internet domain to a Breach Report account. The target BR account is identified by the API key from the request header.
+This API request adds an internet domain to a Breach Report account. The target BR account is identified by the API key from the request header. In addition to this, this API call returns the domain verification code. 
 
 Some of the popular internet domains (gmail.com, facebook.com and such) are included in the API stop list and cannot be added.
 
@@ -344,16 +344,20 @@ puts response.read_body
   "status": "success",
   "domain": {
     "id": "5e751009aab5935e61ce6ddd",
-    "domainName": "smith-example.com"
+    "domainName": "smith-example.com",
+    "isVerified": false,
+    "txtRecord": "brdomaincode=123542-2dfbd-5364-643535"
   }
 }
-
 ```
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | id | string | Identifier of the domain. |
 | domainName | string | The domain name. |
+| isVerified | boolean | Indicator of whether the domain is verified. |
+| txtRecord | string | The verification code for your domain. [Add this code as a TXT record for your web site to validate the domain].(03-manage-emails-domains.md#verifying-a-domain). | 
+
 
 </details>
 

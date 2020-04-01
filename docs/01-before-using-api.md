@@ -167,22 +167,26 @@ Alternatively, you can [register the domain via the API](./03-manage-emails-doma
 
 ## Verifying a Domain
 
-Verifying a domain requires updating the domain's TXT record. 
+Verifying a domain requires updating the domain's TXT record with a value you can get on the portal or as a result of the 
 
 To update the domain's TXT record:
 
+Get the domain verification code. You can use the value that was returned by the [Add a Domain Name API call](./03-manage-emails-domains.md#add-a-domain-name). Or do the following steps:
+
 1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
 2. Open the **Domains** section.
-3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.
+3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.  
 <p align="center">
   <br>
   <img width="500" src="./img/verify-domain.png" alt="">
 </p>
 
-4. Go to your domain registrar's portal. 
-5. Follow the domain registrar's instruction for adding a TXT record. 
+Next, add a TXT record:
 
-Breach Report API periodically checks the registered domains' records, and it will change the domain's status when it sees the updated records. 
+1. Go to your domain registrar's portal. 
+2. Follow the domain registrar's instruction for adding a TXT record. 
+
+Breach Report API periodically checks the domain registration records, and it will change the domain's status when it sees the updated records. 
 
 <p align="center">
   <br>
