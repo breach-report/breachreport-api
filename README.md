@@ -49,11 +49,7 @@
 
 The Breach Report API team monitors the internet for information about data breaches. Currently, our database contains information about over 12B compromised user accounts. Your applications can access this information via Breach Report API.
 
-<p align="center">
-  <br>
-  <img width="500" src="../img/superapi.png" alt="">
-  <br>
-</p>
+
 
 ## Getting started
 
@@ -61,10 +57,7 @@ Before using Breach Report API, make sure you've registered at [Breach Report AP
 
 When you use Breach Report API, include the key in each API call header.
 
-<p align="center">
-  <br>
-  <img width="500" src="../img/chapter-separate.jpg" alt="">
-</p>
+
 
 ## Testing Breach Report API
 
@@ -79,10 +72,7 @@ The following parameters can be specified via the test environment.
 | BASE_URL | `https://breachreport.com` |  |
 | API_KEY | `your-secret-key` | See [Getting the API key](./docs/before-using-api.md#getting-the-api-key) for details. |
 
-<p align="center">
-  <br>
-  <img width="500" src="img/chapter-separate.jpg" alt="">
-</p>
+
 
 ## How to Use Breach Report API
 
@@ -94,10 +84,7 @@ For detailed information on how to use the API, see the following pages:
 * [Monitoring Email Addresses and Domains](docs/04-monitor.md)
 * [Getting Notifications](docs/05-postback-url.md)
 
-<p align="center">
-  <br>
-  <img width="500" src="img/chapter-separate.jpg" alt="">
-</p>
+
 
 ## Contact
 
@@ -114,10 +101,7 @@ We look forward to hearing from you.
 
 And, we hope that you enjoy using Breach Report API and the integration goes smooth!
 
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
+
 
 ## Contributing to the Project
 
@@ -125,10 +109,7 @@ The main purpose of this repository is to let people know about Breach Report AP
 
 You can contribute to the project by [creating a Breach Report account](./docs/01-before-using-api.md#registering-at-breach-report-portal) and getting a [paid subscription](#subscription-plans) or by reporting technical issues to the technical support at support@breachreport.com.
 
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
+
 
 ## Subscription Plans
 
@@ -138,7 +119,7 @@ For information about the current subscription opportunities, see [Billing and P
 
 The subscription plans may have limitations for the number of domains to track and number of available API calls. To remove the current limitations, you may upgrade your current BR account.
 
-For further information, contact the product support at info@breachreport.com.
+For further information, contact the product support at support@breachreport.com.
 
 <p align="center">
   <br>
