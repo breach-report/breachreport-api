@@ -126,7 +126,7 @@ You can manage the Postback URL value using the following operations:
 
 ## Get the Postback URL Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/postback`
+**Request URL**: `{BASE_URL}/api/v1/postback`
 
 **Request method:** `GET`
 
@@ -153,7 +153,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request GET '{{BASE_URL}}/api/enterprise/v1/postback' \
+curl --location --request GET '{{BASE_URL}}/api/v1/postback' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -173,7 +173,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
+fetch("{{BASE_URL}}/api/v1/postback", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -188,7 +188,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/postback"
+url = "{{BASE_URL}}/api/v1/postback"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -206,7 +206,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/postback")
+url = URI("{{BASE_URL}}/api/v1/postback")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Get.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -256,7 +256,7 @@ puts response.read_body
 
 ## Set the Postback URL Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/postback`
+**Request URL**: `{BASE_URL}/api/v1/postback`
 
 **Request method:** `POST`
 
@@ -293,7 +293,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/postback' \
+curl --location --request POST '{{BASE_URL}}/api/v1/postback' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'url=http://localhost:3080/admin/user/test-webhook-url'
@@ -319,7 +319,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
+fetch("{{BASE_URL}}/api/v1/postback", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -335,7 +335,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/postback"
+url = "{{BASE_URL}}/api/v1/postback"
 payload = 'url=http%3A//localhost%3A3080/admin/user/test-webhook-url'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -354,7 +354,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/postback")
+url = URI("{{BASE_URL}}/api/v1/postback")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -407,7 +407,7 @@ puts response.read_body
 
 ## Clear the Postback URL Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/postback`
+**Request URL**: `{BASE_URL}/api/v1/postback`
 
 **Request method:** `DEL`
 
@@ -434,7 +434,7 @@ The request clears the postback URL configuration from your account. As a result
 <br>
 
 ```shell
-curl --location --request DELETE '{{BASE_URL}}/api/enterprise/v1/postback' \
+curl --location --request DELETE '{{BASE_URL}}/api/v1/postback' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -455,7 +455,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
+fetch("{{BASE_URL}}/api/v1/postback", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -470,7 +470,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/postback", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/postback"
+url = "{{BASE_URL}}/api/v1/postback"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -488,7 +488,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/postback")
+url = URI("{{BASE_URL}}/api/v1/postback")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Delete.new(url)
 request["api-key"] = "{{API_KEY}}"

@@ -55,7 +55,7 @@ Breach Report API enables the user to check email addresses for data breach inci
 
 # Check a Plaintext Email Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email/check`
+**Request URL**: `{BASE_URL}/api/v1/email/check`
 
 **Request method:** `POST`
 
@@ -95,7 +95,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email/check' \
+curl --location --request POST '{{BASE_URL}}/api/v1/email/check' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'email=test@test.com'
@@ -109,7 +109,7 @@ curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email/check' \
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email/check"
+url = "{{BASE_URL}}/api/v1/email/check"
 payload = 'email=test@test.com'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -128,7 +128,7 @@ print(response.text.encode('utf8'))
 # Sample Ruby code
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/email/check")
+url = URI("{{BASE_URL}}/api/v1/email/check")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -225,7 +225,7 @@ puts response.read_body
 
 # Check a Hashed Email Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email-hash/check`
+**Request URL**: `{BASE_URL}/api/v1/email-hash/check`
 
 **Request method:** `POST`
 
@@ -283,7 +283,7 @@ Alternatively, you may use an online hashing tool. For example, the [hash calcul
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email-hash/check' \
+curl --location --request POST '{{BASE_URL}}/api/v1/email-hash/check' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'hash=f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a'
@@ -297,7 +297,7 @@ curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email-hash/check'
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email-hash/check"
+url = "{{BASE_URL}}/api/v1/email-hash/check"
 payload = 'hash=f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -315,7 +315,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/email-hash/check")
+url = URI("{{BASE_URL}}/api/v1/email-hash/check")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -402,7 +402,7 @@ puts response.read_body
 
 # Check a Domain for Compromised Email Addresses
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/domain/check`
+**Request URL**: `{BASE_URL}/api/v1/domain/check`
 
 **Request method:** `POST`
 
@@ -435,7 +435,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/domain/check' \
+curl --location --request POST '{{BASE_URL}}/api/v1/domain/check' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'domain=example.com'
@@ -449,7 +449,7 @@ curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/domain/check' \
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/dcmain/check"
+url = "{{BASE_URL}}/api/v1/dcmain/check"
 payload = 'domain=example.com'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -469,7 +469,7 @@ print(response.text.encode('utf8'))
 # Sample Ruby code
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/domain/check")
+url = URI("{{BASE_URL}}/api/v1/domain/check")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -515,7 +515,23 @@ puts response.read_body
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| domains | [] | Empty list of compromised email addresses. |
+| emails | [] | Empty list of compromised email addresses. |
+
+</details>
+
+<details>
+<summary>Cannot show the details for an unverified domain.</summary>
+<br>
+
+```json
+{
+    "emails": []
+}
+```
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| emails | [] | Empty list of compromised email addresses. |
 
 </details>
 

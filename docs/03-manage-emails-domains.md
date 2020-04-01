@@ -61,7 +61,7 @@ This chapter describes the following API calls:
 
 ## Add an Email Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email/`
+**Request URL**: `{BASE_URL}/api/v1/email/`
 
 **Request method:** `POST`
 
@@ -94,7 +94,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email' \
+curl --location --request POST '{{BASE_URL}}/api/v1/email' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'email=me@vassily.pro'
@@ -120,7 +120,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
+fetch("{{BASE_URL}}/api/v1/email", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -135,7 +135,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email"
+url = "{{BASE_URL}}/api/v1/email"
 payload = 'email=me@vassily.pro'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -155,7 +155,7 @@ print(response.text.encode('utf8'))
 require "uri"
 require "net/http"
 
-url = URI("{{BASE_URL}}/api/enterprise/v1/email")
+url = URI("{{BASE_URL}}/api/v1/email")
 
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
@@ -226,7 +226,7 @@ puts response.read_body
 
 ## Add a Domain Name
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/domain/`
+**Request URL**: `{BASE_URL}/api/v1/domain/`
 
 **Request method:** `POST`
 
@@ -261,7 +261,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/domain' \
+curl --location --request POST '{{BASE_URL}}/api/v1/domain' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'domain=vassily.pro'
@@ -287,7 +287,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/domain", requestOptions)
+fetch("{{BASE_URL}}/api/v1/domain", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -302,7 +302,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/domain", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/domain"
+url = "{{BASE_URL}}/api/v1/domain"
 payload = 'domain=vassily.pro'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -321,7 +321,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/domain")
+url = URI("{{BASE_URL}}/api/v1/domain")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -390,7 +390,7 @@ puts response.read_body
 
 ## Get the Email List
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email`
+**Request URL**: `{BASE_URL}/api/v1/email`
 
 **Request method:** `GET`
 
@@ -417,7 +417,7 @@ To construct the request, include the API key in the request header.
 <br>
 
 ```shell
-curl --location --request GET '{{BASE_URL}}/api/enterprise/v1/email' \
+curl --location --request GET '{{BASE_URL}}/api/v1/email' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -437,7 +437,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
+fetch("{{BASE_URL}}/api/v1/email", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -452,7 +452,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email"
+url = "{{BASE_URL}}/api/v1/email"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -470,7 +470,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/email")
+url = URI("{{BASE_URL}}/api/v1/email")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Get.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -531,7 +531,7 @@ puts response.read_body
 
 ## Get the Domain List
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/domain`
+**Request URL**: `{BASE_URL}/api/v1/domain`
 
 **Request method:** `GET`
 
@@ -558,7 +558,7 @@ To construct the request, include the API key in the request header.
 <br>
 
 ```shell
-curl --location --request GET '{{BASE_URL}}/api/enterprise/v1/domain' \
+curl --location --request GET '{{BASE_URL}}/api/v1/domain' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -579,7 +579,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
+fetch("{{BASE_URL}}/api/v1/email", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -596,7 +596,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/email", requestOptions)
 
 Public
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/domain"
+url = "{{BASE_URL}}/api/v1/domain"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -615,7 +615,7 @@ print(response.text.encode('utf8'))
 require "uri"
 require "net/http"
 
-url = URI("{{BASE_URL}}/api/enterprise/v1/domain")
+url = URI("{{BASE_URL}}/api/v1/domain")
 
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Get.new(url)
@@ -676,7 +676,7 @@ puts response.read_body
 
 ## Delete an Email Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email/{EMAIL_ID}`
+**Request URL**: `{BASE_URL}/api/v1/email/{EMAIL_ID}`
 
 **Request method:** `DEL`
 
@@ -709,7 +709,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request DELETE '{{BASE_URL}}/api/enterprise/v1/email/5e4d65741eb6bb316c90fef2' \
+curl --location --request DELETE '{{BASE_URL}}/api/v1/email/5e4d65741eb6bb316c90fef2' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -729,7 +729,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/email/5e4d65741eb6bb316c90fef2", requestOptions)
+fetch("{{BASE_URL}}/api/v1/email/5e4d65741eb6bb316c90fef2", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -744,7 +744,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/email/5e4d65741eb6bb316c90fef2", requestOp
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email/5e4d65741eb6bb316c90fef2"
+url = "{{BASE_URL}}/api/v1/email/5e4d65741eb6bb316c90fef2"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -762,7 +762,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/email/5e4d65741eb6bb316c90fef2")
+url = URI("{{BASE_URL}}/api/v1/email/5e4d65741eb6bb316c90fef2")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Delete.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -817,7 +817,7 @@ puts response.read_body
 
 ## Delete a Domain
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/domain/{DOMAIN_ID}`
+**Request URL**: `{BASE_URL}/api/v1/domain/{DOMAIN_ID}`
 
 **Request method:** `DEL`
 
@@ -845,7 +845,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request DELETE '{{BASE_URL}}/api/enterprise/v1/domain/5e4d82332d313f32626f8481' \
+curl --location --request DELETE '{{BASE_URL}}/api/v1/domain/5e4d82332d313f32626f8481' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -865,7 +865,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/domain/5e4d82332d313f32626f8481", requestOptions)
+fetch("{{BASE_URL}}/api/v1/domain/5e4d82332d313f32626f8481", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -881,7 +881,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/domain/5e4d82332d313f32626f8481", requestO
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/domain/5e4d82332d313f32626f8481"
+url = "{{BASE_URL}}/api/v1/domain/5e4d82332d313f32626f8481"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -899,7 +899,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/domain/5e4d82332d313f32626f8481")
+url = URI("{{BASE_URL}}/api/v1/domain/5e4d82332d313f32626f8481")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Delete.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -952,7 +952,7 @@ puts response.read_body
 
 ## Check a Registered Email Address
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/email/{EMAIL_ID}/check`
+**Request URL**: `{BASE_URL}/api/v1/email/{EMAIL_ID}/check`
 
 **Request method:** `GET`
 
@@ -990,7 +990,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request POST '{{BASE_URL}}/api/enterprise/v1/email/check' \
+curl --location --request POST '{{BASE_URL}}/api/v1/email/check' \
 --header 'api-key: {{API_KEY}}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'email=test@test.com'
@@ -1013,7 +1013,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/email/5e454bbb575c76a755085afe/check", requestOptions)
+fetch("{{BASE_URL}}/api/v1/email/5e454bbb575c76a755085afe/check", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1029,7 +1029,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/email/5e454bbb575c76a755085afe/check", req
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/email/check"
+url = "{{BASE_URL}}/api/v1/email/check"
 payload = 'email=test@test.com'
 headers = {
   'api-key': '{{API_KEY}}',
@@ -1048,7 +1048,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/email/check")
+url = URI("{{BASE_URL}}/api/v1/email/check")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Post.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -1124,7 +1124,7 @@ puts response.read_body
 
 ## Check a Registred Domain
 
-**Request URL**: `{BASE_URL}/api/enterprise/v1/domain/{DOMAIN_ID}/check`
+**Request URL**: `{BASE_URL}/api/v1/domain/{DOMAIN_ID}/check`
 
 **Request method:** `GET`
 
@@ -1157,7 +1157,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request GET '{{BASE_URL}}/api/enterprise/v1/domain/{{DOMAIN_ID}}/check' \
+curl --location --request GET '{{BASE_URL}}/api/v1/domain/{{DOMAIN_ID}}/check' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -1178,7 +1178,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/enterprise/v1/domain/5e454bbb575c76a755085afe/check", requestOptions)
+fetch("{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1193,7 +1193,7 @@ fetch("{{BASE_URL}}/api/enterprise/v1/domain/5e454bbb575c76a755085afe/check", re
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/enterprise/v1/domain/5e454bbb575c76a755085afe/check"
+url = "{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -1211,7 +1211,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/enterprise/v1/domain/5e454bbb575c76a755085afe/check")
+url = URI("{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Get.new(url)
 request["api-key"] = "{{API_KEY}}"
