@@ -121,8 +121,3 @@ The subscription plans may have limitations for the number of domains to track a
 
 For further information, contact the product support at support@breachreport.com.
 
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
-

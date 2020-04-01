@@ -18,7 +18,7 @@
       Monitor
     </a>
     <span> | </span>
-    <a href="./05-get-postback-url.md">
+    <a href="./05-postback-url.md">
       Notifications
     </a>
     <span> | <span>
@@ -176,7 +176,7 @@ To update the domain's TXT record:
 3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.
 <p align="center">
   <br>
-  <img width="500" src="./img/verify-domain.jpg" alt="">
+  <img width="500" src="./img/verify-domain.png" alt="">
 </p>
 
 4. Go to your domain registrar's portal. 
@@ -200,3 +200,4 @@ With Breach Report API, you may get the following HTTP response codes.
 | 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription](https://breachreport.com/portal/subscriptions) page. |
 | 409 | Conflict | The domain name or the email address was registered before. Check your account for existing domains / emails. |
 | 500 | Internal server error | Internal server error occured. If this issue persists, contact our Support Service. |
+

@@ -18,7 +18,7 @@
       Monitor
     </a>
     <span> | </span>
-    <a href="./05-get-postback-url.md">
+    <a href="./05-postback-url.md">
       Notifications
     </a>
     <span> | <span>
