@@ -489,7 +489,7 @@ puts response.read_body
 
 ```json
 {
-  "domains": [
+  "emails": [
     "john.smith@example.com",
     "ivan.wagner@example.com",
     "admin@example.com"

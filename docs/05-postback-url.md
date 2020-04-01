@@ -203,7 +203,6 @@ print(response.text.encode('utf8'))
 <summary>Ruby code example.</summary>
 <br>
 
-
 ```ruby
 require "uri"
 require "net/http"
@@ -216,8 +215,6 @@ puts response.read_body
 ```
 
 </details>
-
-
 
 ### Response Examples
 
@@ -373,7 +370,7 @@ puts response.read_body
 ### Request Parameters
 
 <details>
-<summary>Has set the Postback URL successfully.</summary>
+<summary>Have set the Postback URL successfully.</summary>
 <br>
 
 ```json
@@ -388,10 +385,7 @@ puts response.read_body
 | status | string | Success or error. |
 | postbackUrl| [string] | The list of credential types that were compromised in the incident. |
 
-
 </details>
-
-
 
 <details>
 <summary>Cannot set a Postback URL address that is not in the correct format`.</summary>
@@ -432,7 +426,6 @@ The request clears the postback URL configuration from your account. As a result
 | api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 
 </details>
-
 
 ### Code Examples
 
