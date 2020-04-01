@@ -1,15 +1,4 @@
 
-<h1 align="center">
-  <a name="logo" href="http://breachreport.com"></a>
-  <br>
-  Checking Domains and Email Addresses
-</h1>
-
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
-
 <div align="center"><a name="menu"></a>
   <h4>
     <span> | </span>
@@ -17,19 +6,19 @@
       General Info
     </a>
     <span> | </span>
-    <a href="./docs/01-before-using-api.md">
+    <a href="./01-before-using-api.md">
       Prepare
     </a>
     <span> | </span>
-    <a href="./docs/03-manage-emails-domains.md">
+    <a href="./03-manage-emails-domains.md">
       Manage Account
     </a>
     <span> | </span>
-    <a href="04-monitor.md">
+    <a href="./04-monitor.md">
       Monitor
     </a>
     <span> | </span>
-    <a href="./docs/05-get-postback-url.md">
+    <a href="./05-get-postback-url.md">
       Notifications
     </a>
     <span> | <span>
@@ -41,6 +30,16 @@
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Checking Domains and Email Addresses
+</h1>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
 
 Breach Report API enables the user to check email addresses for data breach incidents by providing the following calls:
 
@@ -408,6 +407,8 @@ puts response.read_body
 **Request method:** `POST`
 
 This API call accepts a plaintext web domain value and returns a list of compromised email addresses on this domain.
+
+The method is only available to verified domain owners. Contact us at support@breachreport.com for further related information. 
 
 How to construct the request:
 

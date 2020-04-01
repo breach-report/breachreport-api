@@ -59,7 +59,7 @@ The Breach Report API team monitors the internet for information about data brea
 
 Before using Breach Report API, make sure you've registered at [Breach Report API portal](https://breachreport.com) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
 
-When you use Breach Report API, include the API key in each API call header.
+When you use Breach Report API, include the key in each API call header.
 
 <p align="center">
   <br>
@@ -103,27 +103,27 @@ For detailed information on how to use the API, see the following pages:
 
 If you need help integrating with Breach Report API or need additional information, feel free to contact us on:
 
-* Telegram
-* Stackoverflow
-* Twitter
+* [Facebook](https://www.facebook.com/breachreport/)
+* [Twitter](https://twitter.com/BreachReports)
 
-Or email us at info@breachreport.com. If you want to report a security issue, include the word "security" in the subject field.
+Or email us at support@breachreport.com. 
 
-We take security issues very seriously and we'll be looking forward to hearing from you.
+If you want to report a security issue, include the word "security" in the subject field. We take all issecurity issues very seriously!
 
-And, we hope you enjoy using Breach Report API and the integration goes smooth!
+We look forward to hearing from you.
+
+And, we hope that you enjoy using Breach Report API and the integration goes smooth!
 
 <p align="center">
   <br>
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-
 ## Contributing to the Project
 
 The main purpose of this repository is to let people know about Breach Report API, making it more functional, faster and easier to use.
 
-You can contribute to the project by [creating a Breach Report account](./docs/01-before-using-api.md#registering-at-breach-report-portal) and getting a [paid subscription](#subscription-plans) or by reporting technical issues to the technical support at info@breachreport.com.
+You can contribute to the project by [creating a Breach Report account](./docs/01-before-using-api.md#registering-at-breach-report-portal) and getting a [paid subscription](#subscription-plans) or by reporting technical issues to the technical support at support@breachreport.com.
 
 <p align="center">
   <br>
@@ -145,7 +145,3 @@ For further information, contact the product support at info@breachreport.com.
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-
-## License
-
-This project is licensed under the terms of the MIT license.

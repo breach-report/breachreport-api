@@ -1,15 +1,4 @@
 
-<h1 align="center">
-  <a name="logo" href="http://breachreport.com"></a>
-  <br>
-  Configuring Postback URL Address
-</h1>
-
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
-
 <div align="center"><a name="menu"></a>
   <h4>
     <span> | </span>
@@ -41,7 +30,18 @@
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-Breach Report API provides delivery of breach-related notifications to a user-specified URL address (Postback URL Address). See [Notification Data Example](#notification-data-example) for the format of data the API can provide.
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Configuring Postback URL Address
+</h1>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+Breach Report API provides delivery of breach-related notifications to a user-specified URL address (Postback URL Address). See [Notification Data Example](#notification-data-example) for the format of data the API provides.
 
 The Postback URL Address must start with `https://` prefix. 
 

@@ -1,15 +1,4 @@
 
-<h1 align="center">
-  <a name="logo" href="http://breachreport.com"></a>
-  <br>
-  Working with the Account
-</h1>
-
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
-
 <div align="center"><a name="menu"></a>
   <h4>
     <span> | </span>
@@ -17,24 +6,35 @@
       General Info
     </a>
     <span> | </span>
-    <a href="./docs/01-before-using-api.md">
+    <a href="./01-before-using-api.md">
       Prepare
     </a>
     <span> | </span>
-    <a href="./docs/02-check-email-domains.md">
+    <a href="./02-check-email-domains.md">
       Check Emails / Domains
     </a>
     <span> | </span>
-    <a href="04-monitor.md">
+    <a href=./04-monitor.md">
       Monitor
     </a>
     <span> | </span>
-    <a href="./docs/05-get-postback-url.md">
+    <a href="./05-get-postback-url.md">
       Notifications
     </a>
     <span> | <span>
   </h4>
 </div>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Working with the Account
+</h1>
 
 <p align="center">
   <br>

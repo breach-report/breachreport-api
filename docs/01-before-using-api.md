@@ -1,15 +1,4 @@
 
-<h1 align="center">
-  <a name="logo" href="http://breachreport.com"></a>
-  <br>
-  Before Using Breach Report API
-</h1>
-
-<p align="center">
-  <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
-</p>
-
 <div align="center"><a name="menu"></a>
   <h4>
     <span> | </span>
@@ -17,19 +6,19 @@
       General Info
     </a>
     <span> | </span>
-    <a href="./docs/02-check-email-domains.md">
+    <a href="./02-check-email-domains.md">
       Check Emails / Domains
     </a>
     <span> | </span>
-    <a href="./docs/03-manage-emails-domains.md">
+    <a href="./03-manage-emails-domains.md">
       Manage Account
     </a>
     <span> | </span>
-    <a href="04-monitor.md">
+    <a href="./04-monitor.md">
       Monitor
     </a>
     <span> | </span>
-    <a href="./docs/05-get-postback-url.md">
+    <a href="./05-get-postback-url.md">
       Notifications
     </a>
     <span> | <span>
@@ -41,10 +30,21 @@
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
+<h1 align="center">
+  <a name="logo" href="http://breachreport.com"></a>
+  <br>
+  Before Using Breach Report API
+</h1>
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
 Things you must know before using Breach Report API:
 
 * Your application must authenticate all calls to Breach Report API using a unique API key. To get the API key, you'll need to register at Breach Report portal.
-* For greater security, Breach Report API provide full email incident data to the account holders only. To prove the account ownership, you must verify the email address by email.
+* For greater security, Breach Report API provide full email incident data to the account holders only. Proving the account ownership requires you to verify the ownership of an email address or a web domain by email. 
 
 <p align="center">
   <br>
@@ -71,7 +71,7 @@ To get the API key, you need to register at Breach Report portal.
 To register a Breach Report account:
 
 1. Go to the [Breach Report signup page](https://breachreport.com/portal/login).
-2. Enter your credentials and click Sign Up.
+2. Enter your credentials and click **Sign Up**.
 3. Confirm your account using the link in the confirmation email.
 4. After signing up, you can log in and generate your API key identifier.
 
@@ -106,7 +106,7 @@ You can add more email addresses to your account via the portal or by using the 
 To add an email address via the portal:
 
 1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
-2. Open the Email Accounts section.
+2. Open the **Email Accounts** section.
 3. Enter the email address in the **Add Email** field.
 4. Confirm the operation by pressing Enter or by clicking the [+] button.
 
@@ -134,6 +134,55 @@ When adding an email address via the portal, a message appears in the bottom por
 </p>
 
 To verify an email address, open the confirmation request message and verify it by clicking the confirmation link.
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+## Adding a Domain
+
+You can add domains to your account via the portal or by using the API.
+
+To add an email address via the portal:
+
+1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+2. Open the **Domains** section.
+3. Enter the email address in the **Add Domain** field.
+4. Confirm the operation by pressing Enter or by clicking the [+] button.
+
+<p align="left">
+  <img width="500" src="../img/add-domain-retouch.png" alt="">
+  <br>
+</p>
+
+The registered domain is now displayed on the page. 
+
+Alternatively, you can [register the domain via the API](./03-manage-emails-domains#add-a-domain-name).
+
+<p align="center">
+  <br>
+  <img width="500" src="./img/chapter-separate.jpg" alt="">
+</p>
+
+## Verifying a Domain
+
+Verifying a domain requires updating the domain's TXT record. 
+
+To update the domain's TXT record:
+
+1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+2. Open the **Domains** section.
+3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.
+<p align="center">
+  <br>
+  <img width="500" src="./img/verify-domain.jpg" alt="">
+</p>
+
+4. Go to your domain registrar's portal. 
+5. Follow the domain registrar's instruction for adding a TXT record. 
+
+Breach Report API periodically checks the registered domains' records, and it will change the domain's status when it sees the updated records. 
 
 <p align="center">
   <br>
