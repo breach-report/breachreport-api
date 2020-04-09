@@ -90,7 +90,7 @@ How to construct the request:
 ### Code Examples
 
 <details>
-<summary>Shell code example.</summary>
+<summary>Shell command example.</summary>
 <br>
 
 ```shell
@@ -230,7 +230,7 @@ puts response.read_body
 
 **Request method:** `POST`
 
-This API request adds an internet domain to a Breach Report account. The target BR account is identified by the API key from the request header. In addition to this, this API call returns the domain verification code. 
+This API request adds an internet domain to a Breach Report account. The target Breach Report account must be identified by the API key from the request header. In addition to this, this API call returns the domain verification code. 
 
 Some of the popular internet domains (gmail.com, facebook.com and such) are included in the API stop list and cannot be added.
 
@@ -257,7 +257,7 @@ How to construct the request:
 ### Code Examples
 
 <details>
-<summary>Shell code example.</summary>
+<summary>Shell command example.</summary>
 <br>
 
 ```shell
@@ -522,12 +522,6 @@ puts response.read_body
 
 </details>
 
-<details>
-<summary>Sample response example.</summary>
-<br>
-
-</details>
-
 <p align="center">
   <br>
   <img width="500" src="./img/chapter-separate.jpg" alt="">
@@ -634,7 +628,7 @@ puts response.read_body
 ### Response Examples
 
 <details>
-<summary>Returned a domain list.</summary>
+<summary>Returned the domain list.</summary>
 <br>
 
 ```json
@@ -779,7 +773,7 @@ puts response.read_body
 ### Response Examples
 
 <details>
-<summary>Successfully deleted the email address.</summary>
+<summary>Removed the email address successfully.</summary>
 <br>
 
 ```json
@@ -802,7 +796,7 @@ puts response.read_body
 </details>
 
 <details>
-<summary>Cannot delete an email address that's not registered.</summary>
+<summary>Cannot remove an email address that's not registered.</summary>
 <br>
 
 ```json
@@ -939,7 +933,7 @@ puts response.read_body
 </details>
 
 <details>
-<summary>Cannot remove an unregistered domain.</summary>
+<summary>Cannot remove a domain that's not registered.</summary>
 <br>
 
 {
@@ -962,7 +956,7 @@ puts response.read_body
 
 The request accepts the email address ID and returns information on related data breaches.
 
-Alternatively, you may check any email address (previously added or a new one) using a [hashed email address value](#check-a-hashed-email-address) (recommended method) or a [plaintext value](#check-a-plaintext-email-address).
+Alternatively, you may check any email address (previously added or a new one) using a [hashed email address value](#check-a-hashed-email-address) (recommended method) or a [plaintext email address](#check-a-plaintext-email-address).
 
 This API call returns:
 
@@ -1070,6 +1064,7 @@ puts response.read_body
 <summary>Found data breaches (verified email address).</summary>
 <br>
 
+```json
 {
   "email": "john.smith@example.com",
   "records": 36,
@@ -1092,6 +1087,7 @@ puts response.read_body
     }
   ]
 }
+```
 
 </details>
 
@@ -1099,12 +1095,14 @@ puts response.read_body
 <summary>Found data breaches (unverified email address).</summary>
 <br>
 
+```json
 {
     "email": "test@example.com",
     "records": 34924,
     "isAssigned": false,
     "breaches": 3
 }
+```
 
 </details>
 

@@ -73,7 +73,7 @@ The request returns a response code and a status message.
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify your hashed email in the request body.
+2. Specify your hashed email address in the request body.
 
 ### Request Parameters
 
@@ -825,14 +825,6 @@ puts response.read_body
 ```
 
 </details>
-
-> Email address was assigned before.
-
-### Response: Email address already assigned
-
-The email address has already been assigned.
-
-
 
 <details>
 <summary>Cannot assign an email address that doesn't match the domain.</summary>

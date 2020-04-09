@@ -88,18 +88,18 @@ For detailed information on how to use the API, see the following pages:
 
 ## Contact
 
-If you need help integrating with Breach Report API or need additional information, feel free to contact us on:
+If you need help integrating your application with Breach Report API or need additional information, feel free to contact us on:
 
 * [Facebook](https://www.facebook.com/breachreport/)
 * [Twitter](https://twitter.com/BreachReports)
 
 Or email us at support@breachreport.com. 
 
-If you want to report a security issue, include the word "security" in the subject field. We take all issecurity issues very seriously!
+If you want to report a security issue, include the word "security" in the subject field. We take all security issues very seriously!
 
 We look forward to hearing from you.
 
-And, we hope that you enjoy using Breach Report API and the integration goes smooth!
+And, we hope that you enjoy using Breach Report API and the integration goes smoothly!
 
 
 

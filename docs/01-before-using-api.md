@@ -43,8 +43,8 @@
 
 Things you must know before using Breach Report API:
 
-* Your application must authenticate all calls to Breach Report API using a unique API key. To get the API key, you'll need to register at Breach Report portal.
-* For greater security, Breach Report API provide full email incident data to the account holders only. Proving the account ownership requires you to verify the ownership of an email address or a web domain by email. 
+* Your application must authenticate all calls to Breach Report API using the API key. To get the API key, [register on the Breach Report portal](https://breachreport.com/portal/signup).
+* For greater security, Breach Report API provide full email incident data to the account holders only. That means you need to verify the ownership of an email address or a web domain by email. 
 
 <p align="center">
   <br>
@@ -83,11 +83,11 @@ To register a Breach Report account:
 
 ## Getting the API Key
 
-To get an API key:
+To get the API key:
 
 1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
 2. Open the API section.
-3. Click Create Key.
+3. Click **Create Key**.
 
 The page now displays the API key you've generated.
 
@@ -176,6 +176,7 @@ Get the domain verification code. You can use the value that was returned by the
 1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
 2. Open the **Domains** section.
 3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.  
+
 <p align="center">
   <br>
   <img width="500" src="./img/verify-domain.png" alt="">
@@ -203,5 +204,5 @@ With Breach Report API, you may get the following HTTP response codes.
 | 400 | Bad Request | Invalid domain URL. Please check the Base URcannot be found in the header. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
 | 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription](https://breachreport.com/portal/subscriptions) page. |
 | 409 | Conflict | The domain name or the email address was registered before. Check your account for existing domains / emails. |
-| 500 | Internal server error | Internal server error occured. If this issue persists, contact our Support Service. |
+| 500 | Internal server error | Internal server error occured. If this issue persists, contact the support service. |
 
