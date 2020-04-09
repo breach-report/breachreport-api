@@ -1126,18 +1126,26 @@ puts response.read_body
 
 ## Check a Registred Domain
 
-**Request URL**: `{BASE_URL}/api/v1/domain/{DOMAIN_ID}/check`
+**Request URL**: `{{BASE_URL}}/api/v1/domain/5e7b8b4b56274b330a50d55f/check?size={{PAGE_SIZE}}&page={{PAGE_NUM}}`
 
 **Request method:** `GET`
 
-This API call accepts an API key and a domain ID, and returns information on previous data breaches for the domain.
+This API call has been updated to return information on compromised email addresses and to support output pagination.
 
-Alternatively, you may check an email address by the [hashed email address](#hashed-email-check) (recommended method).
+This API call accepts:
+
+* API key
+* Domain ID
+* Page size (number of unique email addresses to include in the output)
+* Page number (position of the email addresses within the output)
+
+The API call returns information on previous data breaches - including data breach information - for the domain.
 
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify the email in the request body.
+2. Specify the Domain ID, page size and page number in the requested URL.
+
 
 ### Request Parameters
 
@@ -1147,8 +1155,11 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Should be included in the request header. |
-| DOMAIN_ID | string | ID of the domain to check. |
+| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| DOMAIN_ID | string | ID of the domain to check. Must be included in the requested URL. |
+| PAGE_SIZE | integer | Max number of email address items to output. Must be included in the requested URL. |
+| PAGE_NUM | integer | Position of output items within the full results list. Must be included in the requested URL. |
+
 
 </details>
 
@@ -1159,7 +1170,7 @@ How to construct the request:
 <br>
 
 ```shell
-curl --location --request GET '{{BASE_URL}}/api/v1/domain/{{DOMAIN_ID}}/check' \
+curl --location --request GET '{{BASE_URL}}/api/v1/domain/5e580e0ad336535a8f8f66b8/check?size=10&page=1' \
 --header 'api-key: {{API_KEY}}'
 ```
 
@@ -1173,14 +1184,13 @@ curl --location --request GET '{{BASE_URL}}/api/v1/domain/{{DOMAIN_ID}}/check' \
 // Using fetch()
 var myHeaders = new Headers();
 myHeaders.append("api-key", "{{API_KEY}}");
-
 var requestOptions = {
   method: 'GET',
   headers: myHeaders,
   redirect: 'follow'
 };
 
-fetch("{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check", requestOptions)
+fetch("{{BASE_URL}}/api/enterprise/v1/domain/5e580e0ad336535a8f8f66b8/check?size=10&page=1", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -1195,7 +1205,7 @@ fetch("{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check", requestOption
 ```python
 # Using requests
 import requests
-url = "{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check"
+url = "{{BASE_URL}}/api/enterprise/v1/domain/5e580e0ad336535a8f8f66b8/check?size=10&page=1"
 payload = {}
 headers = {
   'api-key': '{{API_KEY}}'
@@ -1213,7 +1223,7 @@ print(response.text.encode('utf8'))
 ```ruby
 require "uri"
 require "net/http"
-url = URI("{{BASE_URL}}/api/v1/domain/5e454bbb575c76a755085afe/check")
+url = URI("{{BASE_URL}}/api/enterprise/v1/domain/5e580e0ad336535a8f8f66b8/check?size=10&page=1")
 http = Net::HTTP.new(url.host, url.port);
 request = Net::HTTP::Get.new(url)
 request["api-key"] = "{{API_KEY}}"
@@ -1231,60 +1241,63 @@ puts response.read_body
 
 ```json
 {
-  "domain": "string",
-  "records": 0,
+  "domain": "qip.com",
+  "emailsCount": 1071,
   "isAssigned": true,
-  "breaches": [
+  "emails": [
     {
-      "updatedAt": "string",
-      "createdAt": "string",
-      "title": "string",
-      "breachId": "string",
-      "compromisedAccounts": 0,
-      "dataCompromised": "string",
-      "description": "string",
-      "url": "string",
-      "breachMonth": 0,
-      "breachYear": 0,
-      "status": "string",
-      "links": [
-        "string"
-      ],
-      "cms": [
-        "WordPress"
-      ],
-      "logo": "string"
+      "emailAddress": "123qwe@qip.com",
+      "breaches": [
+        {
+          "breachId": 11691,
+          "title": "Xss.is Combolist",
+          "createdAt": "2019-10-11T08:31:30.596Z",
+          "compromisedAccounts": 3039418396,
+          "url": "",
+          "logo": "https://crm.breachreport.com/images/uploads/fvSKpyvOsgOtEejw.png",
+          "description": "A stolen credentials collection surfaced on the dark web community xss.is. The largest publicly shared file to date discovered by Breach Report, containing over 3 billion user accounts. The file is comprised of pairs of users' email addresses and plaintext passwords, which were hacked from a large number of unidentified websites and then dumped together in this single database.",
+          "breachDataTypes": [
+            "email",
+            "plaintext password"
+          ]
+        }
+      ]
+    },
+    {
+      "emailAddress": "-1902736@qip.com",
+      "breaches": []
     }
-  ]
+  ],
+  "size": 10,
+  "page": 1
 }
+
 ```
 
 |Name|Type|Description|
+|Name|Type|Description|
 |---|---|---|
 |domain|path|string|true|Checked domain URL. |
-|records|int|How many times an email was found in breach.|
+|emailsCount|int|How many known email addresses were compromised on the domain.|
 |isAssigned|boolean|Whether an email is verified with the issuing account.|
-|breaches|list|Array / list of breaches and their details.|
-|updatedAt|DateTime|Breach update time.|
-|createdAt|DateTime|Breach added to DB time.|
-|encryption|string|Breach encryption.|
+|emails|list|Array / list of compromised email addresses with related data incident information.|
+|size| int|Page size (number of email address items in the output). |
+|page|int|Page number. |
+|emailAddress|string|Breach update time.|
+|breaches|DateTime|Breach added to DB time.|
 |title|string|Breach title.|
 |breachId|int|An ID of a breach.|
-|compromisedAccounts|int|Number of all compromised accounts.|
-|dataCompromised|string|Compromised data types.|
-|description|string|Description of the breach|
+|createdAt|int|An ID of a breach.|
+|compromisedAccounts|int|Number of compromised accounts in the data incident.|
 |url|string|The link to breach news source.|
-|breachMonth|int|The month of a breach.|
-|breachYear|int|The year of a breach.|
-|status|string|Whether breach validity was verified by BR employees.|
-|links | | |  
-|cms | string |The CMS system the site runs on. Examples: `WordPress`, `Joomla` or `null`.|
-|logo| string |Link to the breach logo. |
+|description|string|Description of the breach|
+|logo| string |Link to the breach logo on Breach Report's internal breach database. |
+|breachDataTypes| list |List / array of compromised data / credential types (email address, hashed password and such). |
 
 </details>
 
 <details>
-<summary>Cannot get a domain with this ID.</summary>
+<summary>Cannot find a domain with this ID.</summary>
 <br>
 
 ```json
