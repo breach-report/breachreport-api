@@ -44,7 +44,7 @@
 Things you must know before using Breach Report API:
 
 * Your application must authenticate all calls to Breach Report API using the API key. To get the API key, [register on the Breach Report portal](https://breachreport.com/portal/signup).
-* For greater security, Breach Report API provide full email incident data to the account holders only. That means you need to verify the ownership of an email address or a web domain by email. 
+* For greater security, Breach Report API provides full email incident data to account holders only. That means you need to verify the ownership of an email address or a web domain by email or by adding a TXT record. 
 
 <p align="center">
   <br>
@@ -57,6 +57,8 @@ Things you must know before using Breach Report API:
 * [Getting the API key](#getting-the-api-key)
 * [Adding an email address](#adding-an-email-address)
 * [Verifying an email address](#verifying-a-registered-email-address)
+* [Adding a domain](#adding-a-domain)
+* [Verifying a domain](#verifying-a-domain)
 * [HTTP response codes](#http-response-codes)
 
 <p align="center">
@@ -68,11 +70,11 @@ Things you must know before using Breach Report API:
 
 To get the API key, you need to register at Breach Report portal.
 
-To register a Breach Report account:
+To create a Breach Report account:
 
 1. Go to the [Breach Report signup page](https://breachreport.com/portal/login).
 2. Enter your credentials and click **Sign Up**.
-3. Confirm your account using the link in the confirmation email.
+3. Confirm your account by using the link in the confirmation email.
 4. After signing up, you can log in and generate your API key identifier.
 
 <p align="center">
@@ -108,7 +110,7 @@ To add an email address via the portal:
 1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
 2. Open the **Email Accounts** section.
 3. Enter the email address in the **Add Email** field.
-4. Confirm the operation by pressing Enter or by clicking the [+] button.
+4. Confirm the action by pressing Enter or by clicking the [+] button.
 
 <p align="left">
   <img width="500" src="../img/add-email-01.png" alt="">
@@ -167,9 +169,9 @@ Alternatively, you can [register the domain via the API](./03-manage-emails-doma
 
 ## Verifying a Domain
 
-Verifying a domain requires updating the domain's TXT record with a value you can get on the portal or as a result of the 
+Verifying a domain requires adding a TXT record to the domain with the value you can get on the portal. 
 
-To update the domain's TXT record:
+To add a TXT record to the domain:
 
 Get the domain verification code. You can use the value that was returned by the [Add a Domain Name API call](./03-manage-emails-domains.md#add-a-domain-name). Or do the following steps:
 

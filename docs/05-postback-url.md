@@ -6,19 +6,19 @@
       General Info
     </a>
     <span> | </span>
-    <a href="./docs/01-before-using-api.md">
+    <a href="./01-before-using-api.md">
       Prepare
     </a>
     <span> | </span>
-    <a href="./docs/02-check-email-domains.md">
+    <a href="./02-check-email-domains.md">
       Check Emails / Domains
     </a>
     <span> | </span>
-    <a href="./docs/03-manage-emails-domains.md">
+    <a href="./03-manage-emails-domains.md">
       Manage Account
     </a>
     <span> | </span>
-    <a href="04-monitor.md">
+    <a href="./04-monitor.md">
       Monitor
     </a>
     <span> | </span>

@@ -33,7 +33,7 @@
 <h1 align="center">
   <a name="logo" href="http://breachreport.com"></a>
   <br>
-  Checking Domains and Email Addresses
+  Checking Domains and Email Addresses for Breaches
 </h1>
 
 <p align="center">
@@ -229,7 +229,7 @@ puts response.read_body
 ```json
 {
     "email": "test@example.com",
-    "records": 34924,
+    "records": 0,
     "isAssigned": false,
     "breaches": 0
 }
@@ -274,7 +274,7 @@ How to construct the request:
 
 ### About Email Address Hashing
 
-Breach Report API only uses encrypted email address values. The encryption method is **Argond2d(SHA256(<email>))**.
+Breach Report API only uses encrypted email address values. The encryption method is **Argond2d(SHA256)**.
 
 Before sending a query, generate the email address hash.
 
@@ -463,7 +463,7 @@ puts response.read_body
 
 This API call accepts a plaintext web domain value and returns a list of compromised email addresses on this domain.
 
-The method is only available to verified domain owners. Contact us at support@breachreport.com for further related information. 
+The method is only available to verified domain owners. Refer to the [Verifying a Domain](https://github.com/vassilyla/breachreport-api/blob/vassily/docs/01-before-using-api.md#verifying-a-domain) section for further information. 
 
 How to construct the request:
 

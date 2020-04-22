@@ -14,7 +14,7 @@
       Check Emails / Domains
     </a>
     <span> | </span>
-    <a href=./04-monitor.md">
+    <a href="./04-monitor.md">
       Monitor
     </a>
     <span> | </span>
@@ -232,7 +232,7 @@ puts response.read_body
 
 This API request adds an internet domain to a Breach Report account. The target Breach Report account must be identified by the API key from the request header. In addition to this, this API call returns the domain verification code. 
 
-Some of the popular internet domains (gmail.com, facebook.com and such) are included in the API stop list and cannot be added.
+Some popular internet domains (gmail.com, facebook.com and such) are included in the API stop list and cannot be added. However, if you represent one of the companies from the stop list and wish to use our service, please contact us at support@breachreport.com.
 
 The request returns a response code and a status message.
 
@@ -685,7 +685,7 @@ The request returns a response code and a status message.
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify your hashed email in the request body.
+2. Specify the email ID in the requested URL address.
 
 ### Request Parameters
 
@@ -696,7 +696,7 @@ How to construct the request:
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
-| email | string | Email you want to check. |
+| EMAIL_ID | string | Identifier of the email address to be removed from the account. |
 
 </details>
 
@@ -833,6 +833,12 @@ How to construct the request:
 <details>
 <summary>Show the parameters.</summary>
 <br>
+
+| Parameter | Type | Description |
+| ------ | ------ | ------ |
+| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| DOMAIN_ID | string | Identified of the domain to be deleted |
+
 </details>
 
 
@@ -966,7 +972,7 @@ This API call returns:
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify the domain ID in the requested URL address.
+2. Specify the email ID in the requested URL address.
 
 ### Request Parameters
 
@@ -977,7 +983,7 @@ How to construct the request:
 | Name | Type | Description |
 | ------ | ------ | ------ |
 | api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Should be included in the request header. |
-| email | string | Email you want to check. |
+| EMAIL_ID | string | Identifier of the requested email address. |
 
 </details>
 
@@ -1132,7 +1138,7 @@ puts response.read_body
 
 This API call has been updated to return information on compromised email addresses and to support output pagination.
 
-This API call accepts:
+The API call accepts:
 
 * API key
 * Domain ID
