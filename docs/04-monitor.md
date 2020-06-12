@@ -83,7 +83,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | EMAIL_ID | string | Identifier of the previously added email address to be put on the watchlist.  |
 
 </details>
@@ -227,7 +227,7 @@ This API call accepts a previously added domains's ID and puts the domain on the
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify the domain ID inside the requested URL. 
+2. Specify the domain ID inside the requested URL.
 
 ### Request Parameters
 
@@ -237,7 +237,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | DOMAIN_ID | string | Identifier of the previously added domain to put on the watchlist.  |
 
 </details>
@@ -390,7 +390,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | EMAIL_ID | string | Identifier of the previously added email address to put on the watchlist.  |
 
 </details>
@@ -542,7 +542,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | DOMAIN_ID | string | Identifier of the previously added domain to put on the watchlist.  |
 
 </details>
@@ -701,7 +701,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | email | string | Email address in the Breach Report database. |
 | domainId | string | Identifier of the domain in the Breach Report database. |
 

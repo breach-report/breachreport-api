@@ -43,7 +43,7 @@
 
 Breach Report API provides delivery of breach-related notifications to a user-specified URL address (Postback URL Address). See [Notification Data Example](#notification-data-example) for the format of data the API provides.
 
-The Postback URL Address must start with `https://` prefix. 
+The Postback URL Address must start with `https://` prefix.
 
 The delivered updates provide information on discovered breaches for the domains and URL addresses that are on the watchlist.
 
@@ -130,9 +130,9 @@ You can manage the Postback URL value using the following operations:
 
 **Request method:** `GET`
 
-Breach Report APi is designed to send notifications to the customer-specified URL address (postback URL). 
+Breach Report APi is designed to send notifications to the customer-specified URL address (postback URL).
 
-This call returns the current postback URL (if any) the API uses for notifications. 
+This call returns the current postback URL (if any) the API uses for notifications.
 
 How to construct the request:
 
@@ -143,7 +143,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | email | string | Email you want to check. |
 
 ### Code Examples
@@ -226,7 +226,7 @@ puts response.read_body
 {
   "status": "success",
   "postbackUrl": "https://example.com:3080/admin/user/test-webhook-url"
-} 
+}
 ```
 
 | Name | Type | Description |
@@ -260,13 +260,13 @@ puts response.read_body
 
 **Request method:** `POST`
 
-Breach Report APi is designed to send notifications to the customer-specified URL address (postback URL). 
+Breach Report APi is designed to send notifications to the customer-specified URL address (postback URL).
 
 This request accepts a URL address and sets it as a target for customer-focused Breach Report API notifications.  
 
-The Postback URL Address must start with `https://` prefix. 
+The Postback URL Address must start with `https://` prefix.
 
-If a postback URL value was specified before, the call updates it with the new value. 
+If a postback URL value was specified before, the call updates it with the new value.
 
 How to construct the request:
 
@@ -281,7 +281,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | url | string | Target postback URL address. |
 
 </details>
@@ -361,7 +361,7 @@ request["api-key"] = "{{API_KEY}}"
 request["Content-Type"] = "application/x-www-form-urlencoded"
 request.body = "url=http%3A//localhost%3A3080/admin/user/test-webhook-url"
 response = http.request(request)
-puts response.read_body 
+puts response.read_body
 ```
 
 </details>
@@ -377,7 +377,7 @@ puts response.read_body
 {
   "status": "success",
   "postbackUrl": "https://example.com:3080/admin/user/test-webhook-url"
-} 
+}
 ```
 
 | Name | Type | Description |
@@ -411,9 +411,9 @@ puts response.read_body
 
 **Request method:** `DEL`
 
-Breach Report APi is designed to send notifications to the customer-specified URL address (Postback URL address). 
+Breach Report APi is designed to send notifications to the customer-specified URL address (Postback URL address).
 
-The request clears the postback URL configuration from your account. As a result of the operation, the API will no longer be able to send you new notifications. 
+The request clears the postback URL configuration from your account. As a result of the operation, the API will no longer be able to send you new notifications.
 
 ### Request Parameters
 
@@ -423,7 +423,7 @@ The request clears the postback URL configuration from your account. As a result
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 
 </details>
 
@@ -507,7 +507,7 @@ puts response.read_body
 ```json
 {
   "status": "success"
-} 
+}
 ```
 
 </details>

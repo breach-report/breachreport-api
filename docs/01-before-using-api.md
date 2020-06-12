@@ -218,7 +218,7 @@ With Breach Report API, you may get the following HTTP response codes.
 | Code | Name | Description |
 | ------ | ------ | ------ |
 | 200 | OK | Request successfully fulfilled. Everything worked as expected. |
-| 400 | Bad Request | Invalid domain URL. Please check the Base URcannot be found in the header. Make sure that you have generated one on the [portal](https://breachreport.com/portal/user-api) section. |
+| 400 | Bad Request | Invalid domain URL or an invalid key. Check the API key on the [portal](https://breachreport.com/portal/user-api) section. |
 | 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription page on the portal](https://breachreport.com/portal/subscriptions) page. |
 | 409 | Conflict | The domain name or the email address was registered before. Check your account for existing domains / emails. |
 | 500 | Internal server error | Internal server error occured. If this issue persists, contact the support service. |
