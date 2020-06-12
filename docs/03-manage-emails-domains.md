@@ -52,7 +52,7 @@ This chapter describes the following API calls:
 * [Remove an email address from the account](#delete-an-email-address)
 * [Remove a web domain from the account](#delete-a-domain)
 * [Check a registered email address for data breach incidents](#check-a-registered-email-address)
-* [Check a registered web domain for data breach incidents](#check-a-registered-domain)
+* [Check a registered web domain for compromised email addresses](#check-a-registered-domain)
 
 <p align="center">
   <br>
@@ -65,9 +65,9 @@ This chapter describes the following API calls:
 
 **Request method:** `POST`
 
-This API call accepts an email address and adds it to a Breach Report account. The BR account must be associated with the secret API key (needs to be included in the request header).
+This API call accepts an email address and adds it to the Breach Report account. The BR account must be associated with the secret API key (needs to be included in the request header).
 
-The request returns a response code and a status message.
+The API call returns a response code and a status message including the Email ID.
 
 How to construct the request:
 
@@ -82,7 +82,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | The key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | The key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 | email | string | Email address to be checked. |
 
 </details>
@@ -177,7 +177,7 @@ puts response.read_body
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | email | string | Email you want to add to the account for monitoring. |
 
 </details>
@@ -230,7 +230,7 @@ puts response.read_body
 
 **Request method:** `POST`
 
-This API request adds an internet domain to a Breach Report account. The target Breach Report account must be identified by the API key from the request header. In addition to this, this API call returns the domain verification code. 
+This API request adds an web domain to the Breach Report account. The target Breach Report account must be identified by the API key from the request header. The API call returns a response code and a status message including the Domain ID.
 
 Some popular internet domains (gmail.com, facebook.com and such) are included in the API stop list and cannot be added. However, if you represent one of the companies from the stop list and wish to use our service, please contact us at support@breachreport.com.
 
@@ -249,7 +249,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | The API key (generated on the [Portal](https://breachreport.com/portal/user-api)). Must be included in the request header. |
+| api-key | string | The API key (generated on the [portal](https://breachreport.com/portal/user-api)). Must be included in the request header. |
 | domain | string | Domain to register. |
 
 </details>
@@ -356,7 +356,7 @@ puts response.read_body
 | id | string | Identifier of the domain. |
 | domainName | string | The domain name. |
 | isVerified | boolean | Indicator of whether the domain is verified. |
-| txtRecord | string | The verification code for your domain. [Add this code as a TXT record for your web site to validate the domain].(03-manage-emails-domains.md#verifying-a-domain). | 
+| txtRecord | string | The verification code for your domain. [Add this code as a TXT record for your web site to validate the domain].(03-manage-emails-domains.md#verifying-a-domain). |
 
 
 </details>
@@ -410,7 +410,7 @@ To construct the request, include the API key in the request header.
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 
 </details>
 
@@ -545,7 +545,7 @@ To construct the request, include the API key in the request header.
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 
 </details>
 
@@ -685,7 +685,7 @@ The request returns a response code and a status message.
 How to construct the request:
 
 1. Include the API key in the request header.
-2. Specify the email ID in the requested URL address.
+2. Specify the Email ID in the requested URL address.
 
 ### Request Parameters
 
@@ -695,7 +695,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | EMAIL_ID | string | Identifier of the email address to be removed from the account. |
 
 </details>
@@ -819,7 +819,7 @@ puts response.read_body
 
 **Request method:** `DEL`
 
-The API call accepts a previously added domain's ID and removes the associated domain entry from the account.
+The API call accepts a Domain ID and removes the associated domain from the account.
 
 The request returns a response code and a status message.
 
@@ -836,7 +836,7 @@ How to construct the request:
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Include this key in the request header. |
 | DOMAIN_ID | string | Identified of the domain to be deleted |
 
 </details>
@@ -960,14 +960,14 @@ puts response.read_body
 
 **Request method:** `GET`
 
-The request accepts the email address ID and returns information on related data breaches.
+The request accepts an Email ID and returns information on related data breaches.
 
 Alternatively, you may check any email address (previously added or a new one) using a [hashed email address value](#check-a-hashed-email-address) (recommended method) or a [plaintext email address](#check-a-plaintext-email-address).
 
 This API call returns:
 
-* Incidents count for **unverified** emails.
-* Incidents count and details for **verified** emails.
+* Incident count for **unverified** emails.
+* Incident count and the details for **verified** emails.
 
 How to construct the request:
 
@@ -982,7 +982,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Should be included in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Should be included in the request header. |
 | EMAIL_ID | string | Identifier of the requested email address. |
 
 </details>
@@ -1130,7 +1130,7 @@ puts response.read_body
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-## Check a Registred Domain
+## Check a Registered Domain
 
 **Request URL**: `{{BASE_URL}}/api/v1/domain/5e7b8b4b56274b330a50d55f/check?size={{PAGE_SIZE}}&page={{PAGE_NUM}}`
 
@@ -1161,7 +1161,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | An API key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | An API key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 | DOMAIN_ID | string | ID of the domain to check. Must be included in the requested URL. |
 | PAGE_SIZE | integer | Max number of email address items to output. Must be included in the requested URL. |
 | PAGE_NUM | integer | Position of output items within the full results list. Must be included in the requested URL. |

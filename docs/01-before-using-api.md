@@ -36,15 +36,37 @@
   Before Using Breach Report API
 </h1>
 
+Using the API effectively requires initial preparation.  
 <p align="center">
   <br>
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-Things you must know before using Breach Report API:
+## Things you must know first
 
-* Your application must authenticate all calls to Breach Report API using the API key. To get the API key, [register on the Breach Report portal](https://breachreport.com/portal/signup).
-* For greater security, Breach Report API provides full email incident data to account holders only. That means you need to verify the ownership of an email address or a web domain by email or by adding a TXT record. 
+Your application must authenticate all calls to Breach Report API using the API key. To get the API key, [register on the Breach Report portal](#registering-at-breach-report-portal).
+
+To check the email addresses for breaches, you have the following options:
+
+* Search information by the plaintext email address
+* Search information by a SHA256 password hash
+* Add the email address to the account and search information by Email ID
+
+To check a web domain for compromised email addresses, add the domain to the account and search information by Domain ID.
+
+For greater security, Breach Report API provides detailed information to proven account holders only.
+
+To get the detailed information about an email address:
+
+1. Add the email address to the account.
+2. Verify the account ownership by email.
+3. Search the information by Email ID.
+
+To run the domain queries:
+
+1. Add the domain to the account.
+2. The Portal will generate a TXT record value. Add this value as a TXT entry to the domain registration records.
+3. Search the information by Domain ID.
 
 <p align="center">
   <br>
@@ -66,16 +88,14 @@ Things you must know before using Breach Report API:
   <img width="500" src="./img/chapter-separate.jpg" alt="">
 </p>
 
-## Registering at Breach Report Portal
+## Registering at the Portal
 
-To get the API key, you need to register at Breach Report portal.
+Before getting the API key, register at the Breach Report portal:
 
-To create a Breach Report account:
-
-1. Go to the [Breach Report signup page](https://breachreport.com/portal/login).
+1. Go to the [signup page](https://breachreport.com/portal/login).
 2. Enter your credentials and click **Sign Up**.
 3. Confirm your account by using the link in the confirmation email.
-4. After signing up, you can log in and generate your API key identifier.
+4. After signing up, you can log in and generate the API key identifier.
 
 <p align="center">
   <br>
@@ -87,7 +107,7 @@ To create a Breach Report account:
 
 To get the API key:
 
-1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+1. Login in on the [portal](https://breachreport.com/portal/).
 2. Open the API section.
 3. Click **Create Key**.
 
@@ -107,7 +127,7 @@ You can add more email addresses to your account via the portal or by using the 
 
 To add an email address via the portal:
 
-1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+1. Login in on the [portal](https://breachreport.com/portal/).
 2. Open the **Email Accounts** section.
 3. Enter the email address in the **Add Email** field.
 4. Confirm the action by pressing Enter or by clicking the [+] button.
@@ -117,7 +137,7 @@ To add an email address via the portal:
   <br>
 </p>
 
-Alternatively, the address can be registered via the API.
+Or, you can register an email address via the API.
 
 <p align="center">
   <br>
@@ -148,7 +168,7 @@ You can add domains to your account via the portal or by using the API.
 
 To add an email address via the portal:
 
-1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+1. Login in on the [portal](https://breachreport.com/portal/).
 2. Open the **Domains** section.
 3. Enter the email address in the **Add Domain** field.
 4. Confirm the operation by pressing Enter or by clicking the [+] button.
@@ -158,9 +178,9 @@ To add an email address via the portal:
   <br>
 </p>
 
-The registered domain is now displayed on the page. 
+The registered domain is now displayed on the page.
 
-Alternatively, you can [register the domain via the API](./03-manage-emails-domains#add-a-domain-name).
+Alternatively, you can register the domain via the API.
 
 <p align="center">
   <br>
@@ -169,27 +189,22 @@ Alternatively, you can [register the domain via the API](./03-manage-emails-doma
 
 ## Verifying a Domain
 
-Verifying a domain requires adding a TXT record to the domain with the value you can get on the portal. 
+Verifying a domain requires adding a TXT record to the domain with the value you can get on the portal.
 
 To add a TXT record to the domain:
 
 Get the domain verification code. You can use the value that was returned by the [Add a Domain Name API call](./03-manage-emails-domains.md#add-a-domain-name). Or do the following steps:
 
-1. Login in on the [Breach Report portal](https://breachreport.com/portal/).
+1. Login in on the [portal](https://breachreport.com/portal/).
 2. Open the **Domains** section.
 3. Click **TXT** for the domain to verify. This copies the text you need to add to your domain records.  
 
-<p align="center">
-  <br>
-  <img width="500" src="./img/verify-domain.png" alt="">
-</p>
+Now, add a TXT record:
 
-Next, add a TXT record:
+1. Go to your domain registrar's portal.
+2. Follow the domain registrar's instruction for adding a TXT record.
 
-1. Go to your domain registrar's portal. 
-2. Follow the domain registrar's instruction for adding a TXT record. 
-
-Breach Report API periodically checks the domain registration records, and it will change the domain's status when it sees the updated records. 
+Breach Report API will check the domain registration records, and it will change the domain status when it sees the updated records.
 
 <p align="center">
   <br>
@@ -203,8 +218,7 @@ With Breach Report API, you may get the following HTTP response codes.
 | Code | Name | Description |
 | ------ | ------ | ------ |
 | 200 | OK | Request successfully fulfilled. Everything worked as expected. |
-| 400 | Bad Request | Invalid domain URL. Please check the Base URcannot be found in the header. Make sure that you have generated one at [Portal](https://breachreport.com/portal/user-api) section. |
-| 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription](https://breachreport.com/portal/subscriptions) page. |
+| 400 | Bad Request | Invalid domain URL. Please check the Base URcannot be found in the header. Make sure that you have generated one on the [portal](https://breachreport.com/portal/user-api) section. |
+| 402 | Payment required | You may need to upgrade your subscription. For further information, visit the [Subscription page on the portal](https://breachreport.com/portal/subscriptions) page. |
 | 409 | Conflict | The domain name or the email address was registered before. Check your account for existing domains / emails. |
 | 500 | Internal server error | Internal server error occured. If this issue persists, contact the support service. |
-

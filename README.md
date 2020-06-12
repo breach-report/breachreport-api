@@ -47,17 +47,32 @@
 
 ## Overview
 
-Breach Report monitors the internet for information about data breaches. Currently, the compiled database contains information about over 12B compromised user accounts. Your applications can access this information via Breach Report API.
+Breach Report monitors the internet for information about data breaches. Currently, the compiled database provides records for 13B+ compromised user accounts. Your applications can access this information via Breach Report API.
 
+The main purpose of this repository is to let you know about Breach Report API and to collect your feedback.
 
 
 ## Getting started
 
 Before using Breach Report API, make sure you've registered at [Breach Report portal](https://breachreport.com/portal/signup) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
 
-When you use Breach Report API, include the key in each API call header.
+When you use Breach Report API, include the key in the request header.
 
+## Contact
 
+We look forward to hearing from you.
+
+If you need help integrating your application with Breach Report API or need additional information, feel free to contact us on:
+
+* [LinkedIn](https://www.linkedin.com/company/breach-report)
+* [Facebook](https://www.facebook.com/breachreport/)
+* [Twitter](https://twitter.com/BreachReports)
+
+Or email us at support@breachreport.com.
+
+If you want to report a security issue, include the word "security" in the subject field. We take all security issues very seriously!
+
+We hope that you enjoy using Breach Report API and that the integration goes smoothly!
 
 ## Testing Breach Report API
 
@@ -76,7 +91,6 @@ Contact the [technical support](mailto:support@breachreport.com) for the additio
 
 For detailed information on how to use the API, see the following pages:
 
-
 * [Before Using Breach Report API](docs/01-before-using-api.md)
 * [Checking Email Addresses and Domains](docs/02-check-email-domains.md)
 * [Registering Email Addresses and Domains](docs/03-manage-emails-domains.md)
@@ -84,31 +98,9 @@ For detailed information on how to use the API, see the following pages:
 * [Getting Notifications](docs/05-postback-url.md)
 
 
-
-## Contact
-
-We look forward to hearing from you.
-
-If you need help integrating your application with Breach Report API or need additional information, feel free to contact us on:
-
-* [LinkedIn](https://www.linkedin.com/company/breach-report)
-* [Facebook](https://www.facebook.com/breachreport/)
-* [Twitter](https://twitter.com/BreachReports)
-
-Or email us at support@breachreport.com.
-
-If you want to report a security issue, include the word "security" in the subject field. We take all security issues very seriously!
-
-We hope that you enjoy using Breach Report API and your integration goes smoothly!
-
-
-
 ## Contributing to the Project
 
-The main purpose of this repository is to let people know about Breach Report API and to collect the feedback.
-
 You can contribute to the project by [creating a Breach Report account](./docs/01-before-using-api.md#registering-at-breach-report-portal) and [getting a paid subscription](#subscription-plans) or by reporting technical issues to the technical support at support@breachreport.com.
-
 
 
 ## Subscription Plans

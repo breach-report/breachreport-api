@@ -83,7 +83,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | The key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | The key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 | email | string | Email address to be checked. |
 
 </details>
@@ -279,7 +279,7 @@ Breach Report API only uses encrypted email address values. The encryption metho
 Before sending a query, generate the email address hash.
 
 <details>
-<summary>How to produce an email address hash on Linux or Mac OS.</summary>
+<summary>How to produce an email address hash on Linux, on Mac OS or by using Git Bash on Windows.</summary>
 <br>
 
 1. Convert the email address to lowercase.
@@ -298,7 +298,7 @@ Alternatively, you may use an online hashing tool, for example, this [hash calcu
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | The key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | The key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 | hash | string | Hashed email address you want to check. |
 
 </details>
@@ -463,7 +463,7 @@ puts response.read_body
 
 This API call accepts a plaintext web domain value and returns a list of compromised email addresses on this domain.
 
-The method is only available to verified domain owners. Refer to the [Verifying a Domain](https://github.com/vassilyla/breachreport-api/blob/vassily/docs/01-before-using-api.md#verifying-a-domain) section for further information. 
+The method is only available to verified domain owners. Refer to the [Verifying a Domain](https://github.com/vassilyla/breachreport-api/blob/vassily/docs/01-before-using-api.md#verifying-a-domain) section for further information.
 
 How to construct the request:
 
@@ -478,7 +478,7 @@ How to construct the request:
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-| api-key | string | The key you can generate on the [Portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
+| api-key | string | The key you can generate on the [portal](https://breachreport.com/portal/user-api). Must be included in the request header. |
 | domain | string | Web domain to be checked. |
 
 </details>
@@ -564,7 +564,7 @@ puts response.read_body
 ### Response Examples
 
 <details>
-<summary>Found Compromised Email Addresses on this Domain</summary>
+<summary>Found Compromised Email Addresses at this Domain</summary>
 <br>
 
 ```json
@@ -584,7 +584,7 @@ puts response.read_body
 </details>
 
 <details>
-<summary>Found No Compromised Email Addresses on this Domain</summary>
+<summary>Found No Compromised Email Addresses at this Domain</summary>
 <br>
 
 ```json
