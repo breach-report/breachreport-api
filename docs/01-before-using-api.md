@@ -141,7 +141,7 @@ Or, you can register an email address via the API.
 
 <p align="center">
   <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
+  <img width="500" src="../img/chapter-separate.jpg" alt="">
 </p>
 
 ## Verifying a Registered Email Address
@@ -159,7 +159,7 @@ To verify an email address, open the confirmation request message and verify it 
 
 <p align="center">
   <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
+  <img width="500" src="../img/chapter-separate.jpg" alt="">
 </p>
 
 ## Adding a Domain
@@ -184,7 +184,7 @@ Alternatively, you can register the domain via the API.
 
 <p align="center">
   <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
+  <img width="500" src="../img/chapter-separate.jpg" alt="">
 </p>
 
 ## Verifying a Domain
@@ -208,7 +208,7 @@ Breach Report API will check the domain registration records, and it will change
 
 <p align="center">
   <br>
-  <img width="500" src="./img/chapter-separate.jpg" alt="">
+  <img width="500" src="../img/chapter-separate.jpg" alt="">
 </p>
 
 ## HTTP Response Codes

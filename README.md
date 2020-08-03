@@ -16,7 +16,7 @@
   <h4>
   <span> | </span>
   <a href="./docs/01-before-using-api.md">
-      Before you Start
+      Before You Start
     </a>
 	<span> | </span>
     <a href="./docs/02-check-email-domains.md">
@@ -47,14 +47,14 @@
 
 ## Overview
 
-Breach Report monitors the internet for information about data breaches. Currently, the compiled database provides records for 13B+ compromised user accounts. Your applications can access this information via Breach Report API.
+Breach Report monitors the internet for information about data breaches. As of August 2020, the compiled database provides records for 14B+ compromised user accounts. Your applications can access this information via Breach Report API.
 
 The main purpose of this repository is to let you know about Breach Report API and to collect your feedback.
 
 
 ## Getting started
 
-Before using Breach Report API, make sure you've registered at [Breach Report portal](https://breachreport.com/portal/signup) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
+Before using Breach Report API, make sure you've registered at [Breach Report portal](https://app.breachreport.com/signup) so you can get and use [the unique API key](docs/01-before-using-api.md/#getting-the-api-key).
 
 When you use Breach Report API, include the key in the request header.
 
@@ -83,7 +83,7 @@ The following parameters can be specified via the test environment.
 | PARAMETER | VALUE | COMMENTS |
 | ------ | ------ | ------ |
 | BASE_URL | `https://breachreport.com` |  |
-| API_KEY | `your-secret-key` | See [Getting the API key](./docs/before-using-api.md#getting-the-api-key) for details. |
+| API_KEY | `your-secret-key` | See [Getting the API key](./docs/before-using-api.md#getting-the-api-key) for the details. |
 
 Contact the [technical support](mailto:support@breachreport.com) for the additional API aids (request schemas, etc).
 

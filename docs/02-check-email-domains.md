@@ -7,7 +7,7 @@
     </a>
     <span> | </span>
     <a href="./01-before-using-api.md">
-      Prepare
+      Before You Start
     </a>
     <span> | </span>
     <a href="./03-manage-emails-domains.md">
